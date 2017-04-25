@@ -1,9 +1,9 @@
 function love.conf(t)
 	t.identity 	= "SIF Icon Builder"
 	t.version  	= "0.10.2"
-	t.console	= true
+	t.console	= false
 	
-	t.window.title 	= "Idol Icon Builder"
+	t.window.title 	= "SukuFes Icon Builder"
 	t.window.icon	= nil
 	t.window.width	= 560
 	t.window.height = 400
