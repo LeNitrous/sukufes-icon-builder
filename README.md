@@ -2,6 +2,9 @@
 ## Welcome
 This is a SIF Icon builder made with [LÖVE2D](https://love2d.org/) made for use with my [osu!](https://osu.ppy.sh/) skin [LoveLive! School Idol Festival](https://osu.ppy.sh/forum/t/539048). Please report for any issues when using the program!
 
+## Downloads
+* [Releases](https://github.com/LeNitrous/sukufes-icon-builder/releases)
+
 ## Screenshot
 ![alt_text](https://github.com/LeNitrous/sukufes-icon-builder/blob/master/screenshot.png "Interface")
 
