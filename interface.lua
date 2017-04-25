@@ -106,7 +106,7 @@ function DrawInterface()
 	b_Create:SetSize(200, 30)
 	b_Create.OnClick = function(object)
 		love.system.openURL("file://"..love.filesystem.getSaveDirectory())
-		canvas:newImageData(330/2+220-74, sHeight/2-64, 128,128):encode("png", i_Box:GetText() ..".png")
+		canvas:newImageData(330/2+220-64, sHeight/2-64, 128,128):encode("png", i_Box:GetText() ..".png")
 	end
 end
 

@@ -65,15 +65,15 @@ ring = {
 		smile	= i.ring_SR_smile
 	},
 	SSR = {
-		all		= i.ring_SR_all,
-		cool	= i.ring_SR_cool,
-		pure	= i.ring_SR_pure,
-		smile	= i.ring_SR_smile
+		all		= i.ring_SSR_all,
+		cool	= i.ring_SSR_cool,
+		pure	= i.ring_SSR_pure,
+		smile	= i.ring_SSR_smile
 	},
 	UR = {
-		all		= i.ring_SR_all,
-		cool	= i.ring_SR_cool,
-		pure	= i.ring_SR_pure,
-		smile	= i.ring_SR_smile
+		all		= i.ring_UR_all,
+		cool	= i.ring_UR_cool,
+		pure	= i.ring_UR_pure,
+		smile	= i.ring_UR_smile
 	}
 }
