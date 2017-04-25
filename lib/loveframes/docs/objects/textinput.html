@@ -1,0 +1,823 @@
+
+			<html>
+			<head>
+			<style type="text/css">html
+{
+	position: relative;
+    min-height: 100%;
+}
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 0 25px;
+	background-color: #F1E5DA;
+	background-image: url(http://static.nikolairesokav.com/images/body-bg.png);
+}
+
+#bg
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1000;
+}
+
+#wrapper
+{
+	margin: auto;
+}
+
+/*==========================================================
+	- Section: Header
+==========================================================*/
+#header
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: #FFFFFF;
+	margin: auto;
+	border-bottom: none;
+	height: 74px;
+	background-color: #3366FF;
+	background-image: url(http://static.nikolairesokav.com/images/header-bg.png);
+}
+
+#header-text
+{
+	padding: 0px;
+	width: 800px;
+	margin: auto;
+	border: 0px solid #000000;
+}
+
+#header a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#header-subtext
+{
+	color: #F5F5F5;
+	font-size: 18px;
+	font-style: italic;
+}
+
+/*==========================================================
+	- Section: Container
+==========================================================*/
+#container
+{
+	margin: auto;
+	margin-top: 30px;
+	width: 800px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+}
+
+/*==========================================================
+	- Section: Navigation
+==========================================================*/
+#navigation-container
+{
+	width: 100%;
+	background: #ffaf4b;
+	background: -moz-linear-gradient(top,  #ffaf4b 0%, #ff920a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffaf4b), color-stop(100%,#ff920a));
+	background: -webkit-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: -o-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: -ms-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: linear-gradient(to bottom,  #ffaf4b 0%,#ff920a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 );
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+}
+
+#navigation
+{
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
+
+#navigation-buttons
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#navigation-buttons li
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	float: left;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#navigation-buttons li a
+{
+	display: block;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 10px;
+	width: auto;
+	text-align: left;
+	text-decoration: none;
+	color: #FFFFFF;
+	width: 80px;
+	text-align: center;
+}
+
+#navigation-buttons li a:hover
+{
+	background-color: rgba(255, 255, 255, 0.30);
+}
+
+#navigation-buttons li a img
+{
+	border: 0px;
+	margin-bottom: -2px;
+}
+
+#navigation-profile-links
+{
+	position: absolute;
+	top: 7px;
+	right: 5px;
+	z-index: 10000;
+}
+
+/*==========================================================
+	- Section: Content
+==========================================================*/
+#content
+{
+	padding: 5px;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+#content-navigation
+{
+	position: absolute;
+	top: 62px;
+	right: 10px;
+	padding: 5px;
+	border: 1px dotted #CCCCCC;
+}
+
+#content-navigation-header
+{
+	padding: 5px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.content-header
+{
+	padding: 5px;
+	font-size: 27px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.content-section-header
+{
+	padding: 5px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #FF9900;
+}
+
+.content-section-body
+{
+	padding: 5px;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.content-section-body a
+{
+	color: #4D79FF;
+	text-decoration: none;
+}
+
+.content-section-body a:hover
+{
+	text-decoration: underline;
+}
+
+.content-section-body a[rel="lightbox[loveframes]"]
+{
+	opacity: 0.80;
+}
+
+.content-section-body a[rel="lightbox[loveframes]"]:hover
+{
+	opacity: 1;
+}
+
+.content-section-body img
+{
+	vertical-align: middle;
+}
+
+/*==========================================================
+	- Section: Guides
+==========================================================*/
+.guide-image
+{
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/*==========================================================
+	- Section: Footer
+==========================================================*/
+#footer
+{
+	text-align: center;
+	font-size: 10px;
+	color: #CCCCCC;
+	position: absolute;
+	bottom: 0px;
+	width: 800px;
+}
+
+#footer-content
+{
+	padding: 5px;
+	font-size: 10px;
+}
+	
+/*==========================================================
+	- Section: Misc
+==========================================================*/
+.changelog
+{
+	min-height: 500px;
+	max-height: 500px;
+	overflow: scroll;
+	overflow-x: hidden;
+	margin-top: 5px;
+	background-color: #FAFAFA;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.important-message
+{
+	background-color: #FFE599;
+	padding: 5px;
+	font-size: 12px;
+	border-radius: 5px;
+}
+
+.critical-message
+{
+	background-color: #FF9900;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	font-size: 12px;
+}
+
+.offset-left
+{
+	margin-left: 15px;
+}
+
+.code
+{
+	border: 1px solid #CCCCCC;
+}
+
+.listitem
+{
+	font-size: 20px;
+}
+
+.listitem-description
+{
+	margin-left: 20px;
+	font-style: italic;
+}
+
+#background-panel
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #FAFAFA;
+	opacity: 0.70;
+	filter:alpha(opacity=70);
+	z-index: 99;
+	visibility: hidden;
+}
+
+/*==========================================================
+	- Section: Documents
+==========================================================*/
+.document-link
+{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	display: block;
+	color: #1982D1;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+.document-link:hover
+{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #F5F5F5;
+	border-radius: 5px;
+}
+
+.document-mainlink
+{
+	font-size: 20px;
+}
+
+.document-codeblock
+{
+	padding: 5px;
+	background-color: #FAFAFA;
+	color: #A4A4A4;
+}
+
+.document-sourcebox
+{
+	position: fixed;
+	width: 90%;
+	background-color: #FFFFFF;
+	visibility: hidden;
+	z-index: 100;
+	border: 1px solid #CCCCCC;
+}
+
+.document-sourcebox-topbar
+{
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.document-sourcebox-topbar a
+{
+	font-weight: normal;
+	color: #1982D1;
+	text-decoration: none;
+}
+
+.document-sourcebox-topbar a:hover
+{
+	text-decoration: underline;
+}
+
+.document-sourcebox-content
+{
+	position: relative;
+	overflow-y: scroll;
+}
+
+/*==========================================================
+	- Section: Data Table
+==========================================================*/
+.datatable
+{
+	width: 100%;
+	border: none;
+}
+
+.datatable-row1 {
+	background-color: #FFFFFF;
+}
+
+.datatable-row2 {
+	background-color: #FAFAFA;
+}
+
+/*==========================================================
+	- Section: Charts
+==========================================================*/
+#loveframes-changelogchart-panel
+{
+	margin-top: 10px;
+	position: relative;
+}
+
+#loveframes-changelogchart-key
+{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}</style>
+			<link href="..//syntaxhighlighter_3.0.83/styles/shCore.css" rel="stylesheet" type="text/css" />
+			<link href="..//syntaxhighlighter_3.0.83/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+			<script type="text/javascript" src="..//syntaxhighlighter_3.0.83/src/shCore.js"></script>
+			<script type="text/javascript" src="..//syntaxhighlighter_3.0.83/scripts/shBrushLua.js"></script>
+			</head>
+			<body>
+			<div id="container">
+			<div id="content"> <div class="content-header">
+		L&#246;ve Frames - The Textinput Object
+	</div>
+
+	<a href="../main.html" class="document-link" style="text-align: center;">Return to Index</a>
+	
+	<div class="content-section-header">
+		Information
+	</div>
+	
+	<div class="content-section-body">
+		The text input object receives text from the user via keyboard. The text input object supports both single-line and multi-line input.
+	</div>
+	
+	<div class="content-section-header">
+		Example Use
+	</div>
+	
+	<div class="content-section-body">
+		<pre class="brush: lua">local frame = loveframes.Create("frame")
+frame:SetName("Text Input")
+frame:SetSize(500, 90)
+frame:CenterWithinArea(unpack(demo.centerarea))
+	
+local textinput = loveframes.Create("textinput", frame)
+textinput:SetPos(5, 30)
+textinput:SetWidth(490)
+textinput.OnEnter = function(object)
+	if not textinput.multiline then
+		object:Clear()
+	end
+end
+textinput:SetFont(love.graphics.newFont(12))
+		
+local togglebutton = loveframes.Create("button", frame)
+togglebutton:SetPos(5, 60)
+togglebutton:SetWidth(490)
+togglebutton:SetText("Toggle Multiline")
+togglebutton.OnClick = function(object)
+	if textinput.multiline then
+		frame:SetHeight(90)
+		frame:Center()
+		togglebutton:SetPos(5, 60)
+		textinput:SetMultiline(false)
+		textinput:SetHeight(25)
+		textinput:SetText("")
+		frame:CenterWithinArea(unpack(demo.centerarea))
+	else
+		frame:SetHeight(365)
+		frame:Center()
+		togglebutton:SetPos(5, 335)
+		textinput:SetMultiline(true)
+		textinput:SetHeight(300)
+		textinput:SetText("")
+		frame:CenterWithinArea(unpack(demo.centerarea))
+	end
+end</pre>
+
+		<div style="text-align: center;">
+			<img src="http://static.nikolairesokav.com/images/documents/loveframes/textinput.png">
+		</div>
+		
+	</div>
+	
+	<div class="content-section-header">
+		Event Callbacks
+	</div>
+	
+	<div class="content-section-body">
+	
+		<strong>OnEnter</strong> - Called when enter/return is pressed when the object has focus. <br/>
+		- Arguments passed: self [object], self text [string]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local textinput = loveframes.Create("textinput")
+textinput.OnEnter = function(object, text)
+	print(text)
+end</pre>
+		
+		<strong>OnTextChanged</strong> - Called when the object's text is changed. <br/>
+		- Arguments passed: self [object], text entered [string] or modifier key [string]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local textinput = loveframes.Create("textinput")
+textinput.OnTextChanged = function(object, text)
+	print(text)
+end</pre>
+		
+		<strong>OnFocusGained</strong> -  Called when the object gains focus. <br/>
+		- Arguments passed: self [object]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local textinput = loveframes.Create("textinput")
+textinput.OnFocusGained = function(object)
+	print("The object has gained focus.")
+end</pre>
+		
+		<strong>OnFocusLost</strong> - Called when the object loses focus. <br/>
+		- Arguments passed: self [object]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local textinput = loveframes.Create("textinput")
+textinput.OnFocusLost = function(object)
+	print("The object has lost focus.")
+end</pre>
+		
+	</div>
+	
+	<div class="content-section-header">
+		Methods
+	</div>
+	
+	<div class="content-section-body">
+	
+		<strong>RunKey</strong> - Called when a key is pressed and needs to be processed into text. <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:RunKey(key[string], unicode[number])</pre>
+		
+		<strong>MoveIndicator</strong> - Moves the object's indicator <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:MoveIndicator(num[number], exact[boolean])</pre>
+		
+		<strong>UpdateIndicator</strong> - Updates the object's indicator <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:UpdateIndicator()</pre>
+		
+		<strong>AddIntoText</strong> - Adds text into the object's text at a specific location <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:AddIntoText(text[string], position[number])</pre>
+		
+		<strong>RemoveFromText</strong> - Removes a chracter from the object's text <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:AddIntoText(position[number])</pre>
+		
+		<strong>GetTextCollisions</strong> - Gets collisions with the object's text and the mouse cursor <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:GetTextCollisions(x[number], y[number])</pre>
+		
+		<strong>PositionText</strong> - Positions the object's text <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:PositionText()</pre>
+		
+		<strong>SetTextOffsetX</strong> - Sets the object's text x offset
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetTextOffsetX(xoffset[number])</pre>
+		
+		<strong>SetTextOffsetY</strong> - Sets the object's text y offset
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetTextOffsetY(yoffset[number])</pre>
+		
+		<strong>SetFont</strong> - Sets the object's font
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetFont(font[font])</pre>
+		
+		<strong>GetFont</strong> - Gets the object's font <br/>
+		- Returns 1 value: font [font]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local font = object:GetFont()</pre>
+		
+		<strong>SetFocus</strong> - Sets the object's focus
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetFocus(focus[true])</pre>
+		
+		<strong>GetFocus</strong> - Gets the object's focus <br/>
+		- Returns 1 value: focus [boolean]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local focus = object:GetFocus()</pre>
+		
+		<strong>GetIndicatorVisibility</strong> - Gets the object's indicator visibility <br/>
+		- Returns 1 value: visibility [boolean]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local indicatorvisibility = object:GetIndicatorVisibility()</pre>
+		
+		<strong>SetLimit</strong> - Sets the maximum number of characters the object's text can have
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetLimit(limit[number])</pre>
+		
+		<strong>SetUsable</strong> - Sets what characters can be used in the object's text
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetUsable(usable[table])</pre>
+		
+		<strong>GetUsable</strong> - Gets what characters can be used in the object's text <br/>
+		- Returns 1 value: usable [table]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local usable = object:GetUsable()</pre>
+		
+		<strong>SetUnsable</strong> - Sets what characters can not be used in the object's text
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetUnusable(unusable[table])</pre>
+		
+		<strong>GetUnsable</strong> - Gets what characters can not be used in the object's text <br/>
+		- Returns 1 value: unusable [table]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local unusable = object:GetUnsable()</pre>
+		
+		<strong>Clear</strong> - Clears the object's text
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:Clear()</pre>
+		
+		<strong>SetText</strong> - Sets the object's text
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetText(text[string])</pre>
+		
+		<strong>GetText</strong> - Gets the object's text
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local text = object:GetText()</pre>
+		
+		<strong>SetMultiline</strong> - Enables or disables multiline input mode
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetMultiline(multiline[bool])</pre>
+		
+		<strong>GetMultiline</strong> - Gets whether or not the object is using multiline input <br/>
+		- Returns 1 value: multiline [bool]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local multiline = object:GetMultiline()</pre>
+		
+		<strong>GetVerticalScrollBody</strong> - Gets the object's vertical scroll body <br/>
+		- Returns 1 value: vscrollbody [object] <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local vscrollbody = object:GetVerticalScrollBody()</pre>
+		
+		<strong>GetHorizontalScrollBody</strong> - Gets the object's horizontal scroll body <br/>
+		- Returns 1 value: hscrollbody [object] <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local hscrollbody = object:GetHorizontalScrollBody()</pre>
+		
+		<strong>HasVerticalScrollBody</strong> - Checks if the object has a vertical scroll body <br/>
+		- Returns 1 value: hasvscrollbody [bool] <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local hasvscrollbody = object:HasVerticalScrollBody()</pre>
+		
+		<strong>HasHorizontalScrollBody</strong> - Checks if the object has a horizontal scroll body <br/>
+		- Returns 1 value: hashscrollbody [bool] <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local hashscrollbody = object:HasHorizontalScrollBody()</pre>
+		
+		<strong>GetLineNumbersPanel</strong> - Gets the object's line numbers panel <br/>
+		- Returns 1 value: panel [object] <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local panel = object:GetLineNumbersPanel()</pre>
+		
+		<strong>GetTextX</strong> - Gets the x position of the object's text <br/>
+		- Returns 1 value: textx [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local textx = object:GetTextX()</pre>
+		
+		<strong>GetTextY</strong> - Gets the y position of the object's text <br/>
+		- Returns 1 value: texty [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local texty = object:GetTextY()</pre>
+		
+		<strong>IsAllTextSelected</strong> - Gets whether or not all of the object's text is selected <br/>
+		- Returns 1 value: alltextselected [bool]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local alltextselected = object:IsAllTextSelected()</pre>
+		
+		<strong>GetLines</strong> - Gets the object's line data <br/>
+		- Returns 1 value: lines [table]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local lines = object:GetLines()</pre>
+		
+		<strong>GetOffsetX</strong> - Gets object's x offset <br/>
+		- Returns 1 value: offsetx [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local offsetx = object:GetOffsetX()</pre>
+		
+		<strong>GetOffsetY</strong> - Gets object's y offset <br/>
+		- Returns 1 value: offsety [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local offsety = object:GetOffsetY()</pre>
+		
+		<strong>GetIndicatorX</strong> - Gets object's indcator x position <br/>
+		- Returns 1 value: indicatorx [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local indicatorx = object:GetIndicatorX()</pre>
+		
+		<strong>GetIndicatorY</strong> - Gets object's indcator y position <br/>
+		- Returns 1 value: indicatory [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local indicatory = object:GetIndicatorY()</pre>
+		
+		<strong>ShowLineNumbers</strong> - Toggles the line numbers panel
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:ShowLineNumbers(show_line_numbers[bool])</pre>
+		
+		<strong>GetItemWidth</strong> - Gets object's item width <br/>
+		- Returns 1 value: itemwidth [number] <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local itemwidth = object:GetItemWidth()</pre>
+		
+		<strong>GetItemHeight</strong> - Gets object's item height <br/>
+		- Returns 1 value: itemheight [number] <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local itemheight = object:GetItemHeight()</pre>
+		
+		<strong>SetTabReplacement</strong> - Sets what characters should be used to replace tab characters
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetTabReplacement(tabreplacement[string])</pre>
+		
+		<strong>GetTabReplacement</strong> - Gets object's tab replacement <br/>
+		- Returns 1 value: tab replacement [string]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local tabreplacement = object:GetTabReplacement()</pre>
+		
+		<strong>SetEditable</strong> - Sets whether the object is editable or not
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetEditable(editable[bool])</pre>
+		
+		<strong>GetEditable</strong> - Gets whether the object is editable or not <br/>
+		- Returns 1 value: editable [bool]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local editable = object:GetEditable()</pre>
+		
+		<strong>SetButtonScrollAmount</strong> - Sets the amount that the object's scroll buttons will scroll the object's list items by
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetButtonScrollAmount(scrollamount[number])</pre>
+		
+		<strong>GetButtonScrollAmount</strong> - Gets the object's scroll button scroll amount <br/>
+		- Returns 1 value: scrollamount [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local scrollamount = object:GetButtonScrollAmount()</pre>
+		
+		<strong>SetMouseWheelScrollAmount</strong> - Sets the amount that the mouse wheel will scroll the object's list items by
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetMouseWheelScrollAmount(scrollamount[number])</pre>
+		
+		<strong>GetMouseWheelScrollAmount</strong> - Gets the mouse wheel's scroll amount <br/>
+		- Returns 1 value: scroll amount [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local scrollamount = object:GetMouseWheelScrollAmount()</pre>
+		
+		<strong>SetAutoScroll</strong> - Sets whether or not the object should autoscroll when in multiline mode
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetAutoScroll(autoscroll[bool])</pre>
+		
+		<strong>GetAutoScroll</strong> - Gets whether or not the object should autoscroll when in multiline mode <br/>
+		- Returns 1 value: autoscroll [boolean]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local autoscroll = object:GetAutoScroll()</pre>
+		
+		<strong>SetRepeatDelay</strong> - Sets the delay before the object begins to repeat the key that is being held down
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetRepeatDelay(delay[number])</pre>
+		
+		<strong>GetRepeatDelay</strong> - Gets the object's repeat delay <br/>
+		- Returns 1 value: delay [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local delay = object:GetRepeatDelay()</pre>
+		
+		<strong>SetValue</strong> - Sets the object's value <br/>
+		- Note: This method is an alias of SetText(text)
+				
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetValue(value)</pre>
+		
+		<strong>GetValue</strong> - Gets the object's value <br/>
+		- Returns 1 value: value [string] <br/>
+		- Note: This method is an alias of GetText()
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local value = object:GetValue()</pre>
+		
+	</div>
+	
+	<script type="text/javascript">SyntaxHighlighter.all();</script> 
+	</div>
+	</div>
+	</div>
+	</body>
+	</html>

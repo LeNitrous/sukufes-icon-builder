@@ -1,0 +1,652 @@
+
+			<html>
+			<head>
+			<style type="text/css">html
+{
+	position: relative;
+    min-height: 100%;
+}
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 0 25px;
+	background-color: #F1E5DA;
+	background-image: url(http://static.nikolairesokav.com/images/body-bg.png);
+}
+
+#bg
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1000;
+}
+
+#wrapper
+{
+	margin: auto;
+}
+
+/*==========================================================
+	- Section: Header
+==========================================================*/
+#header
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: #FFFFFF;
+	margin: auto;
+	border-bottom: none;
+	height: 74px;
+	background-color: #3366FF;
+	background-image: url(http://static.nikolairesokav.com/images/header-bg.png);
+}
+
+#header-text
+{
+	padding: 0px;
+	width: 800px;
+	margin: auto;
+	border: 0px solid #000000;
+}
+
+#header a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#header-subtext
+{
+	color: #F5F5F5;
+	font-size: 18px;
+	font-style: italic;
+}
+
+/*==========================================================
+	- Section: Container
+==========================================================*/
+#container
+{
+	margin: auto;
+	margin-top: 30px;
+	width: 800px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+}
+
+/*==========================================================
+	- Section: Navigation
+==========================================================*/
+#navigation-container
+{
+	width: 100%;
+	background: #ffaf4b;
+	background: -moz-linear-gradient(top,  #ffaf4b 0%, #ff920a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffaf4b), color-stop(100%,#ff920a));
+	background: -webkit-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: -o-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: -ms-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: linear-gradient(to bottom,  #ffaf4b 0%,#ff920a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 );
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+}
+
+#navigation
+{
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
+
+#navigation-buttons
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#navigation-buttons li
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	float: left;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#navigation-buttons li a
+{
+	display: block;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 10px;
+	width: auto;
+	text-align: left;
+	text-decoration: none;
+	color: #FFFFFF;
+	width: 80px;
+	text-align: center;
+}
+
+#navigation-buttons li a:hover
+{
+	background-color: rgba(255, 255, 255, 0.30);
+}
+
+#navigation-buttons li a img
+{
+	border: 0px;
+	margin-bottom: -2px;
+}
+
+#navigation-profile-links
+{
+	position: absolute;
+	top: 7px;
+	right: 5px;
+	z-index: 10000;
+}
+
+/*==========================================================
+	- Section: Content
+==========================================================*/
+#content
+{
+	padding: 5px;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+#content-navigation
+{
+	position: absolute;
+	top: 62px;
+	right: 10px;
+	padding: 5px;
+	border: 1px dotted #CCCCCC;
+}
+
+#content-navigation-header
+{
+	padding: 5px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.content-header
+{
+	padding: 5px;
+	font-size: 27px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.content-section-header
+{
+	padding: 5px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #FF9900;
+}
+
+.content-section-body
+{
+	padding: 5px;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.content-section-body a
+{
+	color: #4D79FF;
+	text-decoration: none;
+}
+
+.content-section-body a:hover
+{
+	text-decoration: underline;
+}
+
+.content-section-body a[rel="lightbox[loveframes]"]
+{
+	opacity: 0.80;
+}
+
+.content-section-body a[rel="lightbox[loveframes]"]:hover
+{
+	opacity: 1;
+}
+
+.content-section-body img
+{
+	vertical-align: middle;
+}
+
+/*==========================================================
+	- Section: Guides
+==========================================================*/
+.guide-image
+{
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/*==========================================================
+	- Section: Footer
+==========================================================*/
+#footer
+{
+	text-align: center;
+	font-size: 10px;
+	color: #CCCCCC;
+	position: absolute;
+	bottom: 0px;
+	width: 800px;
+}
+
+#footer-content
+{
+	padding: 5px;
+	font-size: 10px;
+}
+	
+/*==========================================================
+	- Section: Misc
+==========================================================*/
+.changelog
+{
+	min-height: 500px;
+	max-height: 500px;
+	overflow: scroll;
+	overflow-x: hidden;
+	margin-top: 5px;
+	background-color: #FAFAFA;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.important-message
+{
+	background-color: #FFE599;
+	padding: 5px;
+	font-size: 12px;
+	border-radius: 5px;
+}
+
+.critical-message
+{
+	background-color: #FF9900;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	font-size: 12px;
+}
+
+.offset-left
+{
+	margin-left: 15px;
+}
+
+.code
+{
+	border: 1px solid #CCCCCC;
+}
+
+.listitem
+{
+	font-size: 20px;
+}
+
+.listitem-description
+{
+	margin-left: 20px;
+	font-style: italic;
+}
+
+#background-panel
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #FAFAFA;
+	opacity: 0.70;
+	filter:alpha(opacity=70);
+	z-index: 99;
+	visibility: hidden;
+}
+
+/*==========================================================
+	- Section: Documents
+==========================================================*/
+.document-link
+{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	display: block;
+	color: #1982D1;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+.document-link:hover
+{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #F5F5F5;
+	border-radius: 5px;
+}
+
+.document-mainlink
+{
+	font-size: 20px;
+}
+
+.document-codeblock
+{
+	padding: 5px;
+	background-color: #FAFAFA;
+	color: #A4A4A4;
+}
+
+.document-sourcebox
+{
+	position: fixed;
+	width: 90%;
+	background-color: #FFFFFF;
+	visibility: hidden;
+	z-index: 100;
+	border: 1px solid #CCCCCC;
+}
+
+.document-sourcebox-topbar
+{
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.document-sourcebox-topbar a
+{
+	font-weight: normal;
+	color: #1982D1;
+	text-decoration: none;
+}
+
+.document-sourcebox-topbar a:hover
+{
+	text-decoration: underline;
+}
+
+.document-sourcebox-content
+{
+	position: relative;
+	overflow-y: scroll;
+}
+
+/*==========================================================
+	- Section: Data Table
+==========================================================*/
+.datatable
+{
+	width: 100%;
+	border: none;
+}
+
+.datatable-row1 {
+	background-color: #FFFFFF;
+}
+
+.datatable-row2 {
+	background-color: #FAFAFA;
+}
+
+/*==========================================================
+	- Section: Charts
+==========================================================*/
+#loveframes-changelogchart-panel
+{
+	margin-top: 10px;
+	position: relative;
+}
+
+#loveframes-changelogchart-key
+{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}</style>
+			<link href="..//syntaxhighlighter_3.0.83/styles/shCore.css" rel="stylesheet" type="text/css" />
+			<link href="..//syntaxhighlighter_3.0.83/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+			<script type="text/javascript" src="..//syntaxhighlighter_3.0.83/src/shCore.js"></script>
+			<script type="text/javascript" src="..//syntaxhighlighter_3.0.83/scripts/shBrushLua.js"></script>
+			</head>
+			<body>
+			<div id="container">
+			<div id="content"> 	<div class="content-header">
+		L&#246;ve Frames - Getting Started
+	</div>
+	
+	<a href="../main.html" class="document-link" style="text-align: center;">Return to Index</a>
+	
+	<div class="important-message" style="margin: 20px;">
+		<img src="http://static.nikolairesokav.com/images/icons/error.png" style="margin-bottom: -3px;"></img> 
+		<strong>IMPORTANT</strong>: L&#246;ve Frames is currently in alpha so don't expect it to be completely bug-free.
+	</div>
+	
+	<div class="content-section-body">
+		Welcome to the documentation for L&#246;ve Frames. 
+		Here you will find information about the library as well as documentation on how each part of it works including function lists and example code.
+	</div>
+	
+	<div class="content-section-header">
+		About
+	</div>
+	
+	<div class="content-section-body">
+		This library was created to serve as a functional, efficient GUI library for the L&#214;VE. 
+		The goal of this library is to provide an all in one solution for any GUI needs of L&#214;VE game developers. 
+		This library attempts to achieve this goal by providing a large number of advanced GUI elements as well as methods for their manipulation by the developer. 
+		This library also provides a feature rich skinning system that enables the game developer customize the look of his/her GUI elements to suit nearly any design.
+	</div>
+
+	<div class="content-section-header">
+		Features
+	</div>
+	
+	<div class="content-section-body">
+		<ul>
+			<li>A variety of simple and advanced GUI elements seen in modern day GUI systems</li>
+			<li>Ability to create custom Drawing and Updating functions for each GUI element</li>
+			<li>Advanced skinning system that allows for limitless design possiblities by both game developers and players</li>
+			<li>Event detection such as mouse enter and mouse exit</li>
+			<li>Manipulation methods for each GUI element to allow customizable behavior</li>
+		</ul>
+	</div>
+	
+	<div class="content-section-header">
+		Installation
+	</div>
+	
+	<div class="content-section-body">
+		<strong>Step 1</strong>
+		<div class="offset-left" style="margin-top: 10px; margin-bottom: 10px;">
+			Download the source from the <a href="https://github.com/NikolaiResokav/LoveFrames">repo</a>. Place the source in a folder of it's own and then place that folder anywhere within your project.
+		</div>
+		<!--
+		<strong>Step 2</strong>
+		<div class="offset-left" style="margin-top: 10px; margin-bottom: 10px;">
+			The next thing that you will need to do is change a configuration that tells L&#246;ve Frames where it is installed. 
+			Go to where you placed L&#246;ve Frames and open <strong>init.lua</strong>. 
+			Find <strong>loveframes.config["DIRECTORY"]</strong> and change it's value to the path of the folder that L&#246;ve Frames's <strong>init.lua</strong> is in.
+		</div>
+		-->
+		<strong>Step 2</strong>
+		<div class="offset-left" style="margin-top: 10px;">
+			Now you will need to add a few L&#246;ve Frames functions to your L&#214;VE callbacks. 
+			Open your project's <strong>main.lua</strong> file. 
+			Then place the following function calls into the proper L&#214;VE callbacks:
+			<ul>
+				<li>loveframes.update(dt)</li>
+				<li>loveframes.draw()</li>
+				<li>loveframes.mousepressed(x, y, button)</li>
+				<li>loveframes.mousereleased(x, y, button)</li>
+				<li>loveframes.keypressed(key, unicode)</li>
+				<li>loveframes.keyreleased(key)</li>
+			</ul>
+			Now your main callbacks should look something like this:
+		</div>
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">function love.update(dt)
+			
+	-- your code
+
+	loveframes.update(dt)
+
+end
+				
+function love.draw()
+
+	-- your code
+
+	loveframes.draw()
+
+end
+
+function love.mousepressed(x, y, button)
+
+	-- your code
+
+	loveframes.mousepressed(x, y, button)
+
+end
+
+function love.mousereleased(x, y, button)
+
+	-- your code
+
+	loveframes.mousereleased(x, y, button)
+
+end
+
+function love.keypressed(key, unicode)
+
+	-- your code
+
+	loveframes.keypressed(key, unicode)
+
+end
+
+function love.keyreleased(key)
+
+	-- your code
+
+	loveframes.keyreleased(key)
+
+end</pre>
+		
+		<strong>Step 3</strong>
+		
+		<div class="offset-left" style="margin-top: 10px;">
+			Now that you have successfully installed L&#246;ve Frames, you can load L&#246;ve Frames by requiring it. 
+			Simply place this piece of code in your <strong>love.load()</strong> function in <strong>main.lua</strong> :
+		</div>
+		
+		<pre class="brush: lua" style="margin-top: 10px;">require("path.to.loveframes")</pre>
+		
+		<div class="offset-left" style="margin-top: 10px;">
+			And then replace "path.to.loveframes" with the actual path that you have installed L&#246;ve Frames to. For example, "libraries.loveframes" or "libs.loveframes".
+			If you followed all of the steps above correctly, L&#246;ve Frames should now be loaded into your project when you launch it.
+		</div>
+
+	</div>
+	
+	<div class="content-section-header">
+		Creating Objects
+	</div>
+
+	<div class="content-section-body">
+	
+		<strong>The Object Creation Function</strong>
+
+		<div class="offset-left" style="margin-top: 10px;">
+			Creating a L&#246;ve Frames object is quite simple. Just use the loveframes.Create function and specify what type of object you want to create as the first argument. 
+			For example, if you wanted to create a button you would do something like this:
+		</div>
+		
+		<pre class="brush: lua" style="margin-top: 10px;">local button = loveframes.Create("button")
+button:SetPos(10, 10)</pre>
+		
+		<div class="offset-left" style="margin-top: 10px; margin-bottom: 10px;">
+			The above code would create a button and place it at the coordinates 10, 10.
+		</div>
+		
+		<strong>Parenting Objects</strong>
+		
+		<div class="offset-left" style="margin-top: 10px;">
+			Objects can be parented to other objects in order to create more organized, advanced gui layouts. 
+			To parent an object to another object you can either specify a parent object as the second argument in loveframes.Create, or you can use the SetParent method.
+			Here is an exmaple of both parenting methods:
+		</div>
+		
+		<pre class="brush: lua" style="margin-top: 10px;">
+local parentframe = loveframes.Create("frame")
+
+-- method 1 using loveframes.Create
+local button1 = loveframes.Create("button", parentframe)
+button1:SetPos(5, 35)
+
+-- method 2 using SetParent
+local button2 = loveframes.Create("button")
+button2:SetParent(parentframe)
+button2:SetPos(5, 35)</pre>
+	</div>
+	
+	<div class="content-section-header">
+		Using the State System
+	</div>
+
+	<div class="content-section-body">
+		L&#246;ve Frames has a built-in state system that allows the developer to restrict object activity to certain states. For example, if you have a game with
+		a mainmenu state, and you want to create a frame that will only be shown during that state, you could do something like this:
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">loveframes.SetState("mainmenu")
+				
+local frame = loveframes.Create("frame")
+frame:SetName("Mainmenu Frame")
+frame:Center()
+frame:SetState("mainmenu")
+		</pre>
+		
+		The above code would set L&#246;ve Frames's state to "mainmenu" and create a frame object that will only be shown during that state. To restore L&#246;ve Frame's
+		state to the default state, you can do the following:
+		
+		<pre class="brush: lua" style="margin-top: 10px;">loveframes.SetState("none")</pre>
+	</div>
+		
+	<script type="text/javascript">SyntaxHighlighter.all();</script> 
+	</div>
+	</div>
+	</div>
+	</body>
+	</html>

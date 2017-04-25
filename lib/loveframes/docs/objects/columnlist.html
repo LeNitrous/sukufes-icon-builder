@@ -1,0 +1,666 @@
+
+			<html>
+			<head>
+			<style type="text/css">html
+{
+	position: relative;
+    min-height: 100%;
+}
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 0 25px;
+	background-color: #F1E5DA;
+	background-image: url(http://static.nikolairesokav.com/images/body-bg.png);
+}
+
+#bg
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1000;
+}
+
+#wrapper
+{
+	margin: auto;
+}
+
+/*==========================================================
+	- Section: Header
+==========================================================*/
+#header
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: #FFFFFF;
+	margin: auto;
+	border-bottom: none;
+	height: 74px;
+	background-color: #3366FF;
+	background-image: url(http://static.nikolairesokav.com/images/header-bg.png);
+}
+
+#header-text
+{
+	padding: 0px;
+	width: 800px;
+	margin: auto;
+	border: 0px solid #000000;
+}
+
+#header a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#header-subtext
+{
+	color: #F5F5F5;
+	font-size: 18px;
+	font-style: italic;
+}
+
+/*==========================================================
+	- Section: Container
+==========================================================*/
+#container
+{
+	margin: auto;
+	margin-top: 30px;
+	width: 800px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+}
+
+/*==========================================================
+	- Section: Navigation
+==========================================================*/
+#navigation-container
+{
+	width: 100%;
+	background: #ffaf4b;
+	background: -moz-linear-gradient(top,  #ffaf4b 0%, #ff920a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffaf4b), color-stop(100%,#ff920a));
+	background: -webkit-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: -o-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: -ms-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: linear-gradient(to bottom,  #ffaf4b 0%,#ff920a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 );
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+}
+
+#navigation
+{
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
+
+#navigation-buttons
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#navigation-buttons li
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	float: left;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#navigation-buttons li a
+{
+	display: block;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 10px;
+	width: auto;
+	text-align: left;
+	text-decoration: none;
+	color: #FFFFFF;
+	width: 80px;
+	text-align: center;
+}
+
+#navigation-buttons li a:hover
+{
+	background-color: rgba(255, 255, 255, 0.30);
+}
+
+#navigation-buttons li a img
+{
+	border: 0px;
+	margin-bottom: -2px;
+}
+
+#navigation-profile-links
+{
+	position: absolute;
+	top: 7px;
+	right: 5px;
+	z-index: 10000;
+}
+
+/*==========================================================
+	- Section: Content
+==========================================================*/
+#content
+{
+	padding: 5px;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+#content-navigation
+{
+	position: absolute;
+	top: 62px;
+	right: 10px;
+	padding: 5px;
+	border: 1px dotted #CCCCCC;
+}
+
+#content-navigation-header
+{
+	padding: 5px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.content-header
+{
+	padding: 5px;
+	font-size: 27px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.content-section-header
+{
+	padding: 5px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #FF9900;
+}
+
+.content-section-body
+{
+	padding: 5px;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.content-section-body a
+{
+	color: #4D79FF;
+	text-decoration: none;
+}
+
+.content-section-body a:hover
+{
+	text-decoration: underline;
+}
+
+.content-section-body a[rel="lightbox[loveframes]"]
+{
+	opacity: 0.80;
+}
+
+.content-section-body a[rel="lightbox[loveframes]"]:hover
+{
+	opacity: 1;
+}
+
+.content-section-body img
+{
+	vertical-align: middle;
+}
+
+/*==========================================================
+	- Section: Guides
+==========================================================*/
+.guide-image
+{
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/*==========================================================
+	- Section: Footer
+==========================================================*/
+#footer
+{
+	text-align: center;
+	font-size: 10px;
+	color: #CCCCCC;
+	position: absolute;
+	bottom: 0px;
+	width: 800px;
+}
+
+#footer-content
+{
+	padding: 5px;
+	font-size: 10px;
+}
+	
+/*==========================================================
+	- Section: Misc
+==========================================================*/
+.changelog
+{
+	min-height: 500px;
+	max-height: 500px;
+	overflow: scroll;
+	overflow-x: hidden;
+	margin-top: 5px;
+	background-color: #FAFAFA;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.important-message
+{
+	background-color: #FFE599;
+	padding: 5px;
+	font-size: 12px;
+	border-radius: 5px;
+}
+
+.critical-message
+{
+	background-color: #FF9900;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	font-size: 12px;
+}
+
+.offset-left
+{
+	margin-left: 15px;
+}
+
+.code
+{
+	border: 1px solid #CCCCCC;
+}
+
+.listitem
+{
+	font-size: 20px;
+}
+
+.listitem-description
+{
+	margin-left: 20px;
+	font-style: italic;
+}
+
+#background-panel
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #FAFAFA;
+	opacity: 0.70;
+	filter:alpha(opacity=70);
+	z-index: 99;
+	visibility: hidden;
+}
+
+/*==========================================================
+	- Section: Documents
+==========================================================*/
+.document-link
+{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	display: block;
+	color: #1982D1;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+.document-link:hover
+{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #F5F5F5;
+	border-radius: 5px;
+}
+
+.document-mainlink
+{
+	font-size: 20px;
+}
+
+.document-codeblock
+{
+	padding: 5px;
+	background-color: #FAFAFA;
+	color: #A4A4A4;
+}
+
+.document-sourcebox
+{
+	position: fixed;
+	width: 90%;
+	background-color: #FFFFFF;
+	visibility: hidden;
+	z-index: 100;
+	border: 1px solid #CCCCCC;
+}
+
+.document-sourcebox-topbar
+{
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.document-sourcebox-topbar a
+{
+	font-weight: normal;
+	color: #1982D1;
+	text-decoration: none;
+}
+
+.document-sourcebox-topbar a:hover
+{
+	text-decoration: underline;
+}
+
+.document-sourcebox-content
+{
+	position: relative;
+	overflow-y: scroll;
+}
+
+/*==========================================================
+	- Section: Data Table
+==========================================================*/
+.datatable
+{
+	width: 100%;
+	border: none;
+}
+
+.datatable-row1 {
+	background-color: #FFFFFF;
+}
+
+.datatable-row2 {
+	background-color: #FAFAFA;
+}
+
+/*==========================================================
+	- Section: Charts
+==========================================================*/
+#loveframes-changelogchart-panel
+{
+	margin-top: 10px;
+	position: relative;
+}
+
+#loveframes-changelogchart-key
+{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}</style>
+			<link href="..//syntaxhighlighter_3.0.83/styles/shCore.css" rel="stylesheet" type="text/css" />
+			<link href="..//syntaxhighlighter_3.0.83/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+			<script type="text/javascript" src="..//syntaxhighlighter_3.0.83/src/shCore.js"></script>
+			<script type="text/javascript" src="..//syntaxhighlighter_3.0.83/scripts/shBrushLua.js"></script>
+			</head>
+			<body>
+			<div id="container">
+			<div id="content"> 	<div class="content-header">
+		L&#246;ve Frames - The Column List Object
+	</div>
+
+	<a href="../main.html" class="document-link" style="text-align: center;">Return to Index</a>
+	
+	<div class="content-section-header">
+		Information
+	</div>
+	
+	<div class="content-section-body">
+		The column list object is similar to the list object except it only displays vertically and has columns. 
+		Rows can be added with column specific information.
+	</div>
+	
+	<div class="content-section-header">
+		Example Use
+	</div>
+	
+	<div class="content-section-body">
+		<pre class="brush: lua">local frame = loveframes.Create("frame")
+frame:SetName("Column List")
+frame:SetSize(500, 300)
+frame:CenterWithinArea(unpack(demo.centerarea))
+		
+local list = loveframes.Create("columnlist", frame)
+list:SetPos(5, 30)
+list:SetSize(490, 265)
+list:AddColumn("Column 1")
+list:AddColumn("Column 2")
+list:AddColumn("Column 3")
+list:AddColumn("Column 4")
+		
+for i=1, 20 do
+	list:AddRow("Row " ..i.. ", column 1", "Row " ..i.. ", column 2", "Row " ..i.. ", column 3", "Row " ..i.. ", column 4")
+end</pre>
+	
+		<div style="text-align: center;">
+			<img src="http://static.nikolairesokav.com/images/documents/loveframes/columnlist.png">
+		</div>
+		
+	</div>
+	
+	<div class="content-section-header">
+		Event Callbacks
+	</div>
+	
+	<div class="content-section-body">
+	
+		<strong>OnRowClicked</strong> - Called when a row within the object is clicked <br/>
+		- Arguments passed: self [object], row [object], row data [table]
+	
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local columnlist = loveframes.Create("columnlist")
+columnlist.OnRowClicked = function(parent, row, rowdata)
+	for k, v in ipairs(rowdata) do
+		print("Column " ..k.. ": " ..v)
+	end
+end</pre>
+		
+		<strong>OnScroll</strong> - Called every time the list is scrolled <br/>
+		- Arguments passed: self [object]
+	
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local list = loveframes.Create("list")
+list.OnScroll = function(object)
+	print("The list was scrolled.")
+end</pre>
+
+		<strong>OnRowRightClicked</strong> - Called when a row is right-clicked <br/>
+		- Arguments passed: parent [object], row [object], data [table]
+	
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local list = loveframes.Create("list")
+list.OnRowRightClicked = function(parent, row, data)
+	print("A row was right-clicked.")
+end</pre>
+
+		<strong>OnRowSelected</strong> - Called when a row is selected <br/>
+		- Arguments passed: parent [object], row [object], data [table]
+	
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local list = loveframes.Create("list")
+list.OnRowSelected = function(parent, row, data)
+	print("A row was selected.")
+end</pre>
+		
+	</div>
+	
+	<div class="content-section-header">
+		Methods
+	</div>
+	
+	<div class="content-section-body">
+	
+		<strong>AdjustColumns</strong> - Adjusts the width of the object's columns <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:AdjustColumns()</pre>
+		
+		<strong>AddColumn</strong> - Adds a column to the object
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:AddColumn(name[string])</pre>
+		
+		<strong>AddRow</strong> - Adds a row to the object <br/>
+		- Note: Each argument is for a column (ex: argument will be for column 1).
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:AddRow(...[string or number])</pre>
+		
+		<strong>GetColumnSize</strong> - Adds a row to the object <br/>
+		- Returns 2 values: column width [number], column height [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local w, h = object:GetColumnSize()</pre>
+		
+		<strong>SetMaxColorIndex</strong> - Gets the width and height of a column <br/>
+		- Note: This is used to specify how many color alternations rows should have. 
+		Each row that is added to the object will have a higher color index than the previous row. 
+		When it reaches the max color index the color alternator will start at 1 again. 
+		These color index ids will be accessible via the column list row drawing function, making it easier to have multicolored rows.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetMaxColorIndex(max[number])</pre>
+		
+		<strong>Clear</strong> - Removes all items from the object's list
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:Clear()</pre>
+		
+		<strong>SetAutoScroll</strong> - Sets whether the object should auto scroll when a new item is added. 
+		If set to true, the object will scroll to the end of itself when a new item is added to it.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetAutoScroll(autoscroll[boolean])</pre>
+		
+		<strong>SetButtonScrollAmount</strong> - Sets the amount that the object's scroll buttons will scroll the object's list items by
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetButtonScrollAmount(scrollamount[number])</pre>
+		
+		<strong>GetButtonScrollAmount</strong> - Sets the amount that the object's scroll buttons will scroll the object's list items by <br/>
+		- Returns 1 value: scroll amount [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local scrollamount = object:GetButtonScrollAmount()</pre>
+		
+		<strong>SetMouseWheelScrollAmount</strong> - Sets the amount that the mouse wheel will scroll the object's list items by
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetMouseWheelScrollAmount(scrollamount[number])</pre>
+		
+		<strong>GetMouseWheelScrollAmount</strong> - Gets the mouse wheel's scroll amount <br/>
+		- Returns 1 value: scroll amount [number]
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local scrollamount = object:GetMouseWheelScrollAmount()</pre>
+		
+		<strong>SetColumnHeight</strong> - Sets the height of the object's columns <br/>
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetColumnHeight(height[number])</pre>
+		
+		<strong>SetDTScrolling</strong> - Sets whether or not the object should use delta time when caclulating how many pixels it's scrollbar needs to move <br/>
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetDTScrolling(dtscrolling[boolean])</pre>
+		
+		<strong>GetDTScrolling</strong> - Gets whether or not the object should use delta time when caclulating how many pixels it's scrollbar needs to move <br/>
+		- Returns 1 value: dtscrolling [boolean]
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local dtscrolling = object:GetDTScrolling()</pre>
+		
+		<strong>SelectRow</strong> - Selects the specified row
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SelectRow(row[object], ctrl[boolean])</pre>
+		
+		<strong>DeselectRow</strong> - De-selects the specified row
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:DeselectRow(row[object])</pre>
+		
+		<strong>GetSelectedRows</strong> - Gets the object's selected rows <br/>
+		- Returns 1 value: rows [table]
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local rows = object:GetSelectedRows()</pre>
+		
+		<strong>SetSelectionEnabled</strong> - Sets whether or not the object's rows can be selected
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetSelectionEnabled(enabled[boolean])</pre>
+		
+		<strong>GetSelectionEnabled</strong> - Gets whether or not the object's rows can be selected <br/>
+		- Returns 1 value: enabled [boolean]
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local enabled = object:GetSelectionEnabled()</pre>
+		
+		<strong>SetMultiselectionEnabled</strong> - Sets whether or not multiple rows can be selected at the same time
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetMultiselectionEnabled(enabled[boolean])</pre>
+		
+		<strong>GetMultiselectionEnabled</strong> - Gets whether or not multiple rows can be selected at the same time <br/>
+		- Returns 1 value: enabled [boolean]
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local enabled = object:GetMultiselectionEnabled()</pre>
+		
+		<strong>RemoveColumn</strong> - Removes the specified column
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:RemoveColumn(id[number])</pre>
+		
+		<strong>SetColumnName</strong> - Sets the specified column's name
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetColumnName(id[number], name[string])</pre>
+		
+		<strong>RemoveRow</strong> - Removes the specified row
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:RemoveRow(id[number])</pre>
+		
+		<strong>SetRowColumnText</strong> - Sets the text of the specified column on the specified row
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetRowColumnText(text[string], rowid[number], columnid[number])</pre>
+		
+		<strong>SetRowColumnData</strong> - Sets the text for each column on the specified row
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetRowColumnText(rowid[number], columndata[table])</pre>
+		
+		<strong>SizeToChildren</strong> - Sets the object's height to the combined height of its children. If max is specified, the object will not become higher than max.
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SizeToChildren(max[number])</pre>
+		
+	</div>
+	
+	<script type="text/javascript">SyntaxHighlighter.all();</script> 
+	</div>
+	</div>
+	</div>
+	</body>
+	</html>

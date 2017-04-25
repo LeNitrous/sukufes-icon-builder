@@ -1,0 +1,618 @@
+
+			<html>
+			<head>
+			<style type="text/css">html
+{
+	position: relative;
+    min-height: 100%;
+}
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 0 25px;
+	background-color: #F1E5DA;
+	background-image: url(http://static.nikolairesokav.com/images/body-bg.png);
+}
+
+#bg
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1000;
+}
+
+#wrapper
+{
+	margin: auto;
+}
+
+/*==========================================================
+	- Section: Header
+==========================================================*/
+#header
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: #FFFFFF;
+	margin: auto;
+	border-bottom: none;
+	height: 74px;
+	background-color: #3366FF;
+	background-image: url(http://static.nikolairesokav.com/images/header-bg.png);
+}
+
+#header-text
+{
+	padding: 0px;
+	width: 800px;
+	margin: auto;
+	border: 0px solid #000000;
+}
+
+#header a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#header-subtext
+{
+	color: #F5F5F5;
+	font-size: 18px;
+	font-style: italic;
+}
+
+/*==========================================================
+	- Section: Container
+==========================================================*/
+#container
+{
+	margin: auto;
+	margin-top: 30px;
+	width: 800px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+}
+
+/*==========================================================
+	- Section: Navigation
+==========================================================*/
+#navigation-container
+{
+	width: 100%;
+	background: #ffaf4b;
+	background: -moz-linear-gradient(top,  #ffaf4b 0%, #ff920a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffaf4b), color-stop(100%,#ff920a));
+	background: -webkit-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: -o-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: -ms-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: linear-gradient(to bottom,  #ffaf4b 0%,#ff920a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 );
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+}
+
+#navigation
+{
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
+
+#navigation-buttons
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#navigation-buttons li
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	float: left;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#navigation-buttons li a
+{
+	display: block;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 10px;
+	width: auto;
+	text-align: left;
+	text-decoration: none;
+	color: #FFFFFF;
+	width: 80px;
+	text-align: center;
+}
+
+#navigation-buttons li a:hover
+{
+	background-color: rgba(255, 255, 255, 0.30);
+}
+
+#navigation-buttons li a img
+{
+	border: 0px;
+	margin-bottom: -2px;
+}
+
+#navigation-profile-links
+{
+	position: absolute;
+	top: 7px;
+	right: 5px;
+	z-index: 10000;
+}
+
+/*==========================================================
+	- Section: Content
+==========================================================*/
+#content
+{
+	padding: 5px;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+#content-navigation
+{
+	position: absolute;
+	top: 62px;
+	right: 10px;
+	padding: 5px;
+	border: 1px dotted #CCCCCC;
+}
+
+#content-navigation-header
+{
+	padding: 5px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.content-header
+{
+	padding: 5px;
+	font-size: 27px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.content-section-header
+{
+	padding: 5px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #FF9900;
+}
+
+.content-section-body
+{
+	padding: 5px;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.content-section-body a
+{
+	color: #4D79FF;
+	text-decoration: none;
+}
+
+.content-section-body a:hover
+{
+	text-decoration: underline;
+}
+
+.content-section-body a[rel="lightbox[loveframes]"]
+{
+	opacity: 0.80;
+}
+
+.content-section-body a[rel="lightbox[loveframes]"]:hover
+{
+	opacity: 1;
+}
+
+.content-section-body img
+{
+	vertical-align: middle;
+}
+
+/*==========================================================
+	- Section: Guides
+==========================================================*/
+.guide-image
+{
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/*==========================================================
+	- Section: Footer
+==========================================================*/
+#footer
+{
+	text-align: center;
+	font-size: 10px;
+	color: #CCCCCC;
+	position: absolute;
+	bottom: 0px;
+	width: 800px;
+}
+
+#footer-content
+{
+	padding: 5px;
+	font-size: 10px;
+}
+	
+/*==========================================================
+	- Section: Misc
+==========================================================*/
+.changelog
+{
+	min-height: 500px;
+	max-height: 500px;
+	overflow: scroll;
+	overflow-x: hidden;
+	margin-top: 5px;
+	background-color: #FAFAFA;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.important-message
+{
+	background-color: #FFE599;
+	padding: 5px;
+	font-size: 12px;
+	border-radius: 5px;
+}
+
+.critical-message
+{
+	background-color: #FF9900;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	font-size: 12px;
+}
+
+.offset-left
+{
+	margin-left: 15px;
+}
+
+.code
+{
+	border: 1px solid #CCCCCC;
+}
+
+.listitem
+{
+	font-size: 20px;
+}
+
+.listitem-description
+{
+	margin-left: 20px;
+	font-style: italic;
+}
+
+#background-panel
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #FAFAFA;
+	opacity: 0.70;
+	filter:alpha(opacity=70);
+	z-index: 99;
+	visibility: hidden;
+}
+
+/*==========================================================
+	- Section: Documents
+==========================================================*/
+.document-link
+{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	display: block;
+	color: #1982D1;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+.document-link:hover
+{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #F5F5F5;
+	border-radius: 5px;
+}
+
+.document-mainlink
+{
+	font-size: 20px;
+}
+
+.document-codeblock
+{
+	padding: 5px;
+	background-color: #FAFAFA;
+	color: #A4A4A4;
+}
+
+.document-sourcebox
+{
+	position: fixed;
+	width: 90%;
+	background-color: #FFFFFF;
+	visibility: hidden;
+	z-index: 100;
+	border: 1px solid #CCCCCC;
+}
+
+.document-sourcebox-topbar
+{
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.document-sourcebox-topbar a
+{
+	font-weight: normal;
+	color: #1982D1;
+	text-decoration: none;
+}
+
+.document-sourcebox-topbar a:hover
+{
+	text-decoration: underline;
+}
+
+.document-sourcebox-content
+{
+	position: relative;
+	overflow-y: scroll;
+}
+
+/*==========================================================
+	- Section: Data Table
+==========================================================*/
+.datatable
+{
+	width: 100%;
+	border: none;
+}
+
+.datatable-row1 {
+	background-color: #FFFFFF;
+}
+
+.datatable-row2 {
+	background-color: #FAFAFA;
+}
+
+/*==========================================================
+	- Section: Charts
+==========================================================*/
+#loveframes-changelogchart-panel
+{
+	margin-top: 10px;
+	position: relative;
+}
+
+#loveframes-changelogchart-key
+{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}</style>
+			<link href="..//syntaxhighlighter_3.0.83/styles/shCore.css" rel="stylesheet" type="text/css" />
+			<link href="..//syntaxhighlighter_3.0.83/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+			<script type="text/javascript" src="..//syntaxhighlighter_3.0.83/src/shCore.js"></script>
+			<script type="text/javascript" src="..//syntaxhighlighter_3.0.83/scripts/shBrushLua.js"></script>
+			</head>
+			<body>
+			<div id="container">
+			<div id="content"> 	<div class="content-header">
+		L&#246;ve Frames - The Progressbar Object
+	</div>
+
+	<a href="../main.html" class="document-link" style="text-align: center;">Return to Index</a>
+	
+	<div class="content-section-header">
+		Information
+	</div>
+	
+	<div class="content-section-body">
+		The progress bar object functions like a normal progress bar. 
+		The progress bar object can lerp and perform a function when it reaches it's maximum value.
+	</div>
+	
+	<div class="content-section-header">
+		Example Use
+	</div>
+	
+	<div class="content-section-body">
+		<pre class="brush: lua">local frame = loveframes.Create("frame")
+frame:SetName("Progress Bar")
+frame:SetSize(500, 160)
+frame:CenterWithinArea(unpack(demo.centerarea))
+		
+local progressbar = loveframes.Create("progressbar", frame)
+progressbar:SetPos(5, 30)
+progressbar:SetWidth(490)
+progressbar:SetLerpRate(10)
+		
+local button1 = loveframes.Create("button", frame)
+button1:SetPos(5, 60)
+button1:SetWidth(490)
+button1:SetText("Change bar value")
+button1.OnClick = function(object2, x, y)
+	progressbar:SetValue(math.random(progressbar:GetMin(), progressbar:GetMax()))
+end
+		
+local button2 = loveframes.Create("button", frame)
+button2:SetPos(5, 90)
+button2:SetWidth(490)
+button2:SetText("Toggle bar lerp")
+button2.OnClick = function(object2, x, y)
+	if progressbar:GetLerp() == true then
+		progressbar:SetLerp(false)
+	else
+		progressbar:SetLerp(true)
+	end
+end
+		
+local slider = loveframes.Create("slider", frame)
+slider:SetPos(5, 135)
+slider:SetWidth(490)
+slider:SetText("Progressbar lerp rate")
+slider:SetMinMax(0, 50)
+slider:SetDecimals(0)
+slider:SetValue(10)
+slider.OnValueChanged = function(object2, value)
+	progressbar:SetLerpRate(value)
+end
+		
+local text1 = loveframes.Create("text", frame)
+text1:SetPos(5, 120)
+text1:SetText("Lerp Rate")
+text1:SetFont(love.graphics.newFont(10))
+		
+local text2 = loveframes.Create("text", frame)
+text2:SetFont(love.graphics.newFont(10))
+text2.Update = function(object, dt)
+	object:SetPos(slider:GetWidth() - object:GetWidth(), 120)
+	object:SetText(slider:GetValue())
+end</pre>
+
+		<div style="text-align: center;">
+			<img src="http://static.nikolairesokav.com/images/documents/loveframes/progressbar.png">
+		</div>
+		
+	</div>
+	
+	<div class="content-section-header">
+		Event Callbacks
+	</div>
+	
+	<div class="content-section-body">
+	
+		<strong>OnComplete</strong> - Called when the object reaches it's maximum value <br/>
+		- Arguments passed: self [object]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local progressbar = loveframes.Create("progressbar")
+progressbar.OnComplete = function(object)
+	print("Complete!")
+end</pre>
+		
+	</div>
+	
+	<div class="content-section-header">
+		Methods
+	</div>
+	
+	<div class="content-section-body">
+	
+		<strong>SetMax</strong> - Sets the object's maximum value
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetMax(max[number])</pre>
+		
+		<strong>GetMax</strong> - Gets the object's maximum value <br/>
+		- Returns 1 value: max [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local max = object:GetMax()</pre>
+		
+		<strong>SetMin</strong> - Sets the object's minimum value
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetMin(min[number])</pre>
+		
+		<strong>GetMin</strong> - Gets the object's minimum value <br/>
+		- Returns 1 value: min [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local min = object:GetMin()</pre>
+		
+		<strong>SetMinMax</strong> - Sets the object's minimum and maximum values
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetMinMax(min[number], max[number])</pre>
+		
+		<strong>GetMinMax</strong> - Gets the object's minimum and maximum values <br/>
+		- Returns 2 values: minimum [number], maximum [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local min, max = object:GetMinMax(min[number], max[number])</pre>
+		
+		<strong>SetValue</strong> - Sets the object's value
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetValue(value[number])</pre>
+		
+		<strong>GetValue</strong> - Gets the object's value <br/>
+		- Returns 1 value: value [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local value = object:GetValue()</pre>
+		
+		<strong>SetLerp</strong> - Sets whether the object should lerp or not
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetLerp(lerp[boolean])</pre>
+		
+		<strong>GetLerp</strong> - Gets whether the object should lerp or not <br/>
+		- Returns 1 value: lerp [boolean]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local lerp = object:GetLerp()</pre>
+		
+		<strong>SetLerpRate</strong> - Sets the rate at which the object should lerp
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetLerpRate(lerp[number])</pre>
+		
+		<strong>GetLerpRate</strong> - Gets the rate at which the object should lerp <br/>
+		- Returns 1 value: lerprate [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local lerprate = object:GetLerpRate()</pre>
+		
+		<strong>GetCompleted</strong> - Gets whether or not the object has reached it's maximum value <br/>
+		- Returns 1 value: completed [boolean]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local completed = object:GetCompleted()</pre>
+		
+		<strong>GetBarWidth</strong> - Gets the object's bar width <br/>
+		- Returns 1 value: bar width [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local completed = object:GetCompleted()</pre>
+		
+	</div>
+	
+	<script type="text/javascript">SyntaxHighlighter.all();</script> 
+	</div>
+	</div>
+	</div>
+	</body>
+	</html>

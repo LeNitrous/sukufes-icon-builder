@@ -1,0 +1,548 @@
+
+			<html>
+			<head>
+			<style type="text/css">html
+{
+	position: relative;
+    min-height: 100%;
+}
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 0 25px;
+	background-color: #F1E5DA;
+	background-image: url(http://static.nikolairesokav.com/images/body-bg.png);
+}
+
+#bg
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1000;
+}
+
+#wrapper
+{
+	margin: auto;
+}
+
+/*==========================================================
+	- Section: Header
+==========================================================*/
+#header
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: #FFFFFF;
+	margin: auto;
+	border-bottom: none;
+	height: 74px;
+	background-color: #3366FF;
+	background-image: url(http://static.nikolairesokav.com/images/header-bg.png);
+}
+
+#header-text
+{
+	padding: 0px;
+	width: 800px;
+	margin: auto;
+	border: 0px solid #000000;
+}
+
+#header a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#header-subtext
+{
+	color: #F5F5F5;
+	font-size: 18px;
+	font-style: italic;
+}
+
+/*==========================================================
+	- Section: Container
+==========================================================*/
+#container
+{
+	margin: auto;
+	margin-top: 30px;
+	width: 800px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+}
+
+/*==========================================================
+	- Section: Navigation
+==========================================================*/
+#navigation-container
+{
+	width: 100%;
+	background: #ffaf4b;
+	background: -moz-linear-gradient(top,  #ffaf4b 0%, #ff920a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffaf4b), color-stop(100%,#ff920a));
+	background: -webkit-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: -o-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: -ms-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: linear-gradient(to bottom,  #ffaf4b 0%,#ff920a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 );
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+}
+
+#navigation
+{
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
+
+#navigation-buttons
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#navigation-buttons li
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	float: left;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#navigation-buttons li a
+{
+	display: block;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 10px;
+	width: auto;
+	text-align: left;
+	text-decoration: none;
+	color: #FFFFFF;
+	width: 80px;
+	text-align: center;
+}
+
+#navigation-buttons li a:hover
+{
+	background-color: rgba(255, 255, 255, 0.30);
+}
+
+#navigation-buttons li a img
+{
+	border: 0px;
+	margin-bottom: -2px;
+}
+
+#navigation-profile-links
+{
+	position: absolute;
+	top: 7px;
+	right: 5px;
+	z-index: 10000;
+}
+
+/*==========================================================
+	- Section: Content
+==========================================================*/
+#content
+{
+	padding: 5px;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+#content-navigation
+{
+	position: absolute;
+	top: 62px;
+	right: 10px;
+	padding: 5px;
+	border: 1px dotted #CCCCCC;
+}
+
+#content-navigation-header
+{
+	padding: 5px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.content-header
+{
+	padding: 5px;
+	font-size: 27px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.content-section-header
+{
+	padding: 5px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #FF9900;
+}
+
+.content-section-body
+{
+	padding: 5px;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.content-section-body a
+{
+	color: #4D79FF;
+	text-decoration: none;
+}
+
+.content-section-body a:hover
+{
+	text-decoration: underline;
+}
+
+.content-section-body a[rel="lightbox[loveframes]"]
+{
+	opacity: 0.80;
+}
+
+.content-section-body a[rel="lightbox[loveframes]"]:hover
+{
+	opacity: 1;
+}
+
+.content-section-body img
+{
+	vertical-align: middle;
+}
+
+/*==========================================================
+	- Section: Guides
+==========================================================*/
+.guide-image
+{
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/*==========================================================
+	- Section: Footer
+==========================================================*/
+#footer
+{
+	text-align: center;
+	font-size: 10px;
+	color: #CCCCCC;
+	position: absolute;
+	bottom: 0px;
+	width: 800px;
+}
+
+#footer-content
+{
+	padding: 5px;
+	font-size: 10px;
+}
+	
+/*==========================================================
+	- Section: Misc
+==========================================================*/
+.changelog
+{
+	min-height: 500px;
+	max-height: 500px;
+	overflow: scroll;
+	overflow-x: hidden;
+	margin-top: 5px;
+	background-color: #FAFAFA;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.important-message
+{
+	background-color: #FFE599;
+	padding: 5px;
+	font-size: 12px;
+	border-radius: 5px;
+}
+
+.critical-message
+{
+	background-color: #FF9900;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	font-size: 12px;
+}
+
+.offset-left
+{
+	margin-left: 15px;
+}
+
+.code
+{
+	border: 1px solid #CCCCCC;
+}
+
+.listitem
+{
+	font-size: 20px;
+}
+
+.listitem-description
+{
+	margin-left: 20px;
+	font-style: italic;
+}
+
+#background-panel
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #FAFAFA;
+	opacity: 0.70;
+	filter:alpha(opacity=70);
+	z-index: 99;
+	visibility: hidden;
+}
+
+/*==========================================================
+	- Section: Documents
+==========================================================*/
+.document-link
+{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	display: block;
+	color: #1982D1;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+.document-link:hover
+{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #F5F5F5;
+	border-radius: 5px;
+}
+
+.document-mainlink
+{
+	font-size: 20px;
+}
+
+.document-codeblock
+{
+	padding: 5px;
+	background-color: #FAFAFA;
+	color: #A4A4A4;
+}
+
+.document-sourcebox
+{
+	position: fixed;
+	width: 90%;
+	background-color: #FFFFFF;
+	visibility: hidden;
+	z-index: 100;
+	border: 1px solid #CCCCCC;
+}
+
+.document-sourcebox-topbar
+{
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.document-sourcebox-topbar a
+{
+	font-weight: normal;
+	color: #1982D1;
+	text-decoration: none;
+}
+
+.document-sourcebox-topbar a:hover
+{
+	text-decoration: underline;
+}
+
+.document-sourcebox-content
+{
+	position: relative;
+	overflow-y: scroll;
+}
+
+/*==========================================================
+	- Section: Data Table
+==========================================================*/
+.datatable
+{
+	width: 100%;
+	border: none;
+}
+
+.datatable-row1 {
+	background-color: #FFFFFF;
+}
+
+.datatable-row2 {
+	background-color: #FAFAFA;
+}
+
+/*==========================================================
+	- Section: Charts
+==========================================================*/
+#loveframes-changelogchart-panel
+{
+	margin-top: 10px;
+	position: relative;
+}
+
+#loveframes-changelogchart-key
+{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}</style>
+			<link href="..//syntaxhighlighter_3.0.83/styles/shCore.css" rel="stylesheet" type="text/css" />
+			<link href="..//syntaxhighlighter_3.0.83/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+			<script type="text/javascript" src="..//syntaxhighlighter_3.0.83/src/shCore.js"></script>
+			<script type="text/javascript" src="..//syntaxhighlighter_3.0.83/scripts/shBrushLua.js"></script>
+			</head>
+			<body>
+			<div id="container">
+			<div id="content"> 	<div class="content-header">
+		L&#246;ve Frames - The Util Library
+	</div>
+
+	<a href="../main.html" class="document-link" style="text-align: center;">Return to Index</a>
+	
+	<div class="content-section-header">
+		Information
+	</div>
+	
+	<div class="content-section-body">
+		The Love Frames util library houses various functions, most of which are meant for internal use by Love Frames only.
+	</div>
+	
+	<div class="content-section-header">
+		Functions
+	</div>
+	
+	<div class="content-section-body">
+	
+		<strong>SetActiveSkin</strong> - Sets the active skin
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">loveframes.util.SetActiveSkin(name[string])</pre>
+		
+		<strong>GetActiveSkin</strong> - Gets the active skin <br/>
+		- Returns 1 value: active skin [string]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local activeskin = loveframes.util.GetActiveSkin()</pre>
+		
+		<strong>BoundingBox</strong> - Used to check for collisions of two rectangles <br/>
+		- Returns 1 value: collision [boolean] <br/>
+		- Note: I take no credit for this function
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local col = loveframes.util.BoundingBox(x1, x2, y1, y2, w1, w2, h1, h2)</pre>
+		
+		<strong>GetCollisions</strong> - Get what objects the mouse cursor is colliding with <br/>
+		- Returns 1 value: objects [table]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local cols = loveframes.util.GetCollisions(object, t)</pre>
+		
+		<strong>GetAllObjects</strong> - Gets all active Love Frames objects <br/>
+		- Returns 1 value: objects [table]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local objects = loveframes.util.GetAllObjects(object, t)</pre>
+		
+		<strong>GetDirectoryContents</strong> - Gets the contents of a directory recursively <br/>
+		- Returns 1 value: directory contents [table]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local contents = loveframes.util.GetDirectoryContents(dir, t)</pre>
+		
+		<strong>Round</strong> - Used to round numbers <br/>
+		- Returns 1 value: rounded number [number] <br/>
+		- Note: I take no credit for this function
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local roundednumber = loveframes.util.Round(num, idp)</pre>
+		
+		<strong>SplitString</strong> - Splits a string into a table by the given pattern <br/>
+		- Returns 1 value: table [table] <br/>
+		- Note: I take no credit for this function
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local table = loveframes.util.SplitString(str, pat)</pre>
+		
+		<strong>RemoveAll</strong> - Removes all active Love Frames objects
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">loveframes.util.RemoveAll()</pre>
+		
+		<strong>TableHasKey</strong> - Checks to see if a table has a specific key <br/>
+		- Returns 1 value: haskey [boolean]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local haskey = loveframes.util.TableHasKey(table, key)</pre>
+		
+		<strong>Error</strong> - Displays an error message as a Love Frames error
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">loveframes.util.Error(message)</pre>
+		
+		<strong>GetCollisionCount</strong> - Gets the total number Love Frames objects colliding with the mouse <br/>
+		- Returns 1 value: collisioncount [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local colcount = loveframes.util.GetCollisionCount()</pre>
+		
+		<strong>GetHover</strong> - Returns true if the mouse is colliding with a visible Love Frames objetct, false if not <br/>
+		- Returns 1 value: hover [boolean]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local hover = loveframes.util.GetHover()</pre>
+		
+		<strong>RectangleCollisionCheck</strong> - Checks for collisions between two rectangles <br/>
+		- Returns 1 value: collision [boolean]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local col = loveframes.util.RectangleCollisionCheck(rect1[table], rect2[table])</pre>
+		
+		<strong>DeepCopy</strong> - Copies a table <br/>
+		- Returns 1 value: newtable [table]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local newtable = loveframes.util.DeepCopy(original_table[table])</pre>
+		
+	</div>
+	
+	<script type="text/javascript">SyntaxHighlighter.all();</script> 
+	</div>
+	</div>
+	</div>
+	</body>
+	</html>

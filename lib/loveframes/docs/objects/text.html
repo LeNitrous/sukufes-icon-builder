@@ -1,0 +1,665 @@
+
+			<html>
+			<head>
+			<style type="text/css">html
+{
+	position: relative;
+    min-height: 100%;
+}
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 0 25px;
+	background-color: #F1E5DA;
+	background-image: url(http://static.nikolairesokav.com/images/body-bg.png);
+}
+
+#bg
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1000;
+}
+
+#wrapper
+{
+	margin: auto;
+}
+
+/*==========================================================
+	- Section: Header
+==========================================================*/
+#header
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: #FFFFFF;
+	margin: auto;
+	border-bottom: none;
+	height: 74px;
+	background-color: #3366FF;
+	background-image: url(http://static.nikolairesokav.com/images/header-bg.png);
+}
+
+#header-text
+{
+	padding: 0px;
+	width: 800px;
+	margin: auto;
+	border: 0px solid #000000;
+}
+
+#header a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#header-subtext
+{
+	color: #F5F5F5;
+	font-size: 18px;
+	font-style: italic;
+}
+
+/*==========================================================
+	- Section: Container
+==========================================================*/
+#container
+{
+	margin: auto;
+	margin-top: 30px;
+	width: 800px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+}
+
+/*==========================================================
+	- Section: Navigation
+==========================================================*/
+#navigation-container
+{
+	width: 100%;
+	background: #ffaf4b;
+	background: -moz-linear-gradient(top,  #ffaf4b 0%, #ff920a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffaf4b), color-stop(100%,#ff920a));
+	background: -webkit-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: -o-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: -ms-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: linear-gradient(to bottom,  #ffaf4b 0%,#ff920a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 );
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+}
+
+#navigation
+{
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
+
+#navigation-buttons
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#navigation-buttons li
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	float: left;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#navigation-buttons li a
+{
+	display: block;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 10px;
+	width: auto;
+	text-align: left;
+	text-decoration: none;
+	color: #FFFFFF;
+	width: 80px;
+	text-align: center;
+}
+
+#navigation-buttons li a:hover
+{
+	background-color: rgba(255, 255, 255, 0.30);
+}
+
+#navigation-buttons li a img
+{
+	border: 0px;
+	margin-bottom: -2px;
+}
+
+#navigation-profile-links
+{
+	position: absolute;
+	top: 7px;
+	right: 5px;
+	z-index: 10000;
+}
+
+/*==========================================================
+	- Section: Content
+==========================================================*/
+#content
+{
+	padding: 5px;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+#content-navigation
+{
+	position: absolute;
+	top: 62px;
+	right: 10px;
+	padding: 5px;
+	border: 1px dotted #CCCCCC;
+}
+
+#content-navigation-header
+{
+	padding: 5px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.content-header
+{
+	padding: 5px;
+	font-size: 27px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.content-section-header
+{
+	padding: 5px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #FF9900;
+}
+
+.content-section-body
+{
+	padding: 5px;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.content-section-body a
+{
+	color: #4D79FF;
+	text-decoration: none;
+}
+
+.content-section-body a:hover
+{
+	text-decoration: underline;
+}
+
+.content-section-body a[rel="lightbox[loveframes]"]
+{
+	opacity: 0.80;
+}
+
+.content-section-body a[rel="lightbox[loveframes]"]:hover
+{
+	opacity: 1;
+}
+
+.content-section-body img
+{
+	vertical-align: middle;
+}
+
+/*==========================================================
+	- Section: Guides
+==========================================================*/
+.guide-image
+{
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/*==========================================================
+	- Section: Footer
+==========================================================*/
+#footer
+{
+	text-align: center;
+	font-size: 10px;
+	color: #CCCCCC;
+	position: absolute;
+	bottom: 0px;
+	width: 800px;
+}
+
+#footer-content
+{
+	padding: 5px;
+	font-size: 10px;
+}
+	
+/*==========================================================
+	- Section: Misc
+==========================================================*/
+.changelog
+{
+	min-height: 500px;
+	max-height: 500px;
+	overflow: scroll;
+	overflow-x: hidden;
+	margin-top: 5px;
+	background-color: #FAFAFA;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.important-message
+{
+	background-color: #FFE599;
+	padding: 5px;
+	font-size: 12px;
+	border-radius: 5px;
+}
+
+.critical-message
+{
+	background-color: #FF9900;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	font-size: 12px;
+}
+
+.offset-left
+{
+	margin-left: 15px;
+}
+
+.code
+{
+	border: 1px solid #CCCCCC;
+}
+
+.listitem
+{
+	font-size: 20px;
+}
+
+.listitem-description
+{
+	margin-left: 20px;
+	font-style: italic;
+}
+
+#background-panel
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #FAFAFA;
+	opacity: 0.70;
+	filter:alpha(opacity=70);
+	z-index: 99;
+	visibility: hidden;
+}
+
+/*==========================================================
+	- Section: Documents
+==========================================================*/
+.document-link
+{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	display: block;
+	color: #1982D1;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+.document-link:hover
+{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #F5F5F5;
+	border-radius: 5px;
+}
+
+.document-mainlink
+{
+	font-size: 20px;
+}
+
+.document-codeblock
+{
+	padding: 5px;
+	background-color: #FAFAFA;
+	color: #A4A4A4;
+}
+
+.document-sourcebox
+{
+	position: fixed;
+	width: 90%;
+	background-color: #FFFFFF;
+	visibility: hidden;
+	z-index: 100;
+	border: 1px solid #CCCCCC;
+}
+
+.document-sourcebox-topbar
+{
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.document-sourcebox-topbar a
+{
+	font-weight: normal;
+	color: #1982D1;
+	text-decoration: none;
+}
+
+.document-sourcebox-topbar a:hover
+{
+	text-decoration: underline;
+}
+
+.document-sourcebox-content
+{
+	position: relative;
+	overflow-y: scroll;
+}
+
+/*==========================================================
+	- Section: Data Table
+==========================================================*/
+.datatable
+{
+	width: 100%;
+	border: none;
+}
+
+.datatable-row1 {
+	background-color: #FFFFFF;
+}
+
+.datatable-row2 {
+	background-color: #FAFAFA;
+}
+
+/*==========================================================
+	- Section: Charts
+==========================================================*/
+#loveframes-changelogchart-panel
+{
+	margin-top: 10px;
+	position: relative;
+}
+
+#loveframes-changelogchart-key
+{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}</style>
+			<link href="..//syntaxhighlighter_3.0.83/styles/shCore.css" rel="stylesheet" type="text/css" />
+			<link href="..//syntaxhighlighter_3.0.83/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+			<script type="text/javascript" src="..//syntaxhighlighter_3.0.83/src/shCore.js"></script>
+			<script type="text/javascript" src="..//syntaxhighlighter_3.0.83/scripts/shBrushLua.js"></script>
+			</head>
+			<body>
+			<div id="container">
+			<div id="content"> 	<div class="content-header">
+		L&#246;ve Frames - The Text Object
+	</div>
+
+	<a href="../main.html" class="document-link" style="text-align: center;">Return to Index</a>
+	
+	<div class="content-section-header">
+		Information
+	</div>
+	
+	<div class="content-section-body">
+		The text object creates wrappable, character colorable text.
+	</div>
+	
+	<div class="content-section-header">
+		Example Use
+	</div>
+	
+	<div class="content-section-body">
+		<pre class="brush: lua">local frame = loveframes.Create("frame")
+frame:SetName("Text")
+frame:SetSize(500, 330)
+frame:CenterWithinArea(unpack(demo.centerarea))
+	
+local list = loveframes.Create("list", frame)
+list:SetPos(5, 30)
+list:SetSize(243, 265)
+list:SetPadding(5)
+list:SetSpacing(5)
+	
+local text1 = loveframes.Create("text")
+text1:SetText(loremipsum)
+text1:SetShadowColor(200, 200, 200, 255)
+list:AddItem(text1)
+	
+local colortext = {}
+for i=1, 150 do
+	local r = math.random(0, 255)
+	local g = math.random(0, 255)
+	local b = math.random(0, 255)
+	table.insert(colortext, {r, g, b, 255})
+	table.insert(colortext, math.random(1, 1000) .. " ")
+end
+	
+local text2 = loveframes.Create("text", frame)
+text2:SetPos(255, 30)
+text2:SetMaxWidth(243)
+text2:SetText(colortext)
+	
+local shadowbutton = loveframes.Create("button", frame)
+shadowbutton:SetSize(490, 25)
+shadowbutton:SetPos(5, 300)
+shadowbutton:SetText("Toggle Text Shadow")
+shadowbutton.OnClick = function()
+	text1:SetShadow(not text1:GetShadow())
+	text2:SetShadow(not text2:GetShadow())
+end</pre>
+
+		<div style="text-align: center;">
+			<img src="http://static.nikolairesokav.com/images/documents/loveframes/text.png">
+		</div>
+		
+	</div>
+	
+	<div class="content-section-header">
+		Event Callbacks
+	</div>
+	
+	<div class="content-section-body">
+		The text object has no unique event callbacks.
+	</div>
+	
+	<div class="content-section-header">
+		Formatting Text
+	</div>
+	
+	<div class="content-section-body">
+	
+		<strong>Colors</strong>
+		
+		<div class="offset-left" style="margin-top: 10px;">
+			The text object allows the user to specify color formatted text within a table as the argument to SetText. 
+			Below is an example of how to color format text with the text object:
+		
+			<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local text = {{255, 0, 0, 255}, "Red ", {0, 255, 0, 255}, "Green ", {0, 0, 255, 255}, "Blue"}
+object:SetText(text)</pre>
+		</div>
+		
+		<strong>Line breaks</strong>
+		
+		<div class="offset-left" style="margin-top: 10px;">
+			To use line breaks in your text you can use one of these methods:
+		
+			<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">-- singleline string linebreak
+object:SetText("Text with a \n line break")
+
+-- multiline string linebreak
+local text =
+[[
+Text with a 
+ line break
+]]
+object:SetText(text)</pre>
+			
+			Note that there must be a space before and after each line break character for the text to format properly.
+		</div>
+		
+	</div>
+	
+	<div class="content-section-header">
+		Methods
+	</div>
+	
+	<div class="content-section-body">
+	
+		<strong>SetText</strong> - Sets the object's text <br/>
+		- Note: The argument can be a string, number, or a table of color formatted text. 
+		More information on formatted text can be found toward the top of this page.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetText(text[string or number or table])</pre>
+		
+		<strong>GetText</strong> - Gets the object's text <br/>
+		- Returns 1 value: text [string] <br/>
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local text = object:GetText()</pre>
+		
+		<strong>GetFormattedText</strong> - Gets the object's formatted text <br/>
+		- Returns 1 value: text [table] <br/>
+		- Note: This function returns a table containing both the object's text and data containing how certain parts of that text should be colored.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local formatted_text = object:GetFormattedText()</pre>
+		
+		<strong>DrawText</strong> - Draws the object's text <br/>
+		- Note: This method is used by the object internally. You should not use it unless you know what you are doing.
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:DrawText()</pre>
+		
+		<strong>SetMaxWidth</strong> - Sets the object's maximum width. The object will wrap its text if it exceeds it's maximum width. <br/>
+		- Note: Set to 0 to disable text wrapping
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetMaxWidth(width[number])</pre>
+		
+		<strong>GetMaxWidth</strong> - Gets the object's max width <br/>
+		- Returns 1 value: max width [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local maxwidth = object:GetMaxWidth()</pre>
+		
+		<strong>SetFont</strong> - Sets the object's font
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetFont(font[font])</pre>
+		
+		<strong>GetFont</strong> - Gets the object's font <br/>
+		- Returns 1 value: font [font]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local font = object:GetFont()</pre>
+		
+		<strong>GetLines</strong> - Gets the number of lines the object's text uses <br/>
+		- Returns 1 value: lines [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local lines = object:GetLines()</pre>
+		
+		<strong>GetFormattedText</strong> - Gets the object's formatted text <br/>
+		- Returns 1 value: formatted text [table]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local formattedtext = object:GetFormattedText()</pre>
+		
+		<strong>SetIgnoreNewlines</strong> - Sets whether the object should ignore \n while formatting it's text
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetIgnoreNewlines(ingorenewlines[bool])</pre>
+		
+		<strong>GetIgnoreNewlines</strong> - Gets whether the object should ignore \n while formatting it's text <br/>
+		- Returns 1 value: ignore newlines [bool]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local ignorenewlines = object:GetIgnoreNewlines()</pre>
+		
+		<strong>SetShadow</strong> - Sets whether or not the object should draw it's text twice to create a "shadow" effect <br/>
+		- Note: Enabling shadows on the text object can be very expensive
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetShadow(shadow[bool])</pre>
+		
+		<strong>GetShadow</strong> - Gets whether or not the object has shadow drawing enabled <br/>
+		- Returns 1 value: shadow enabled [bool]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local shadow = object:GetShadow()</pre>
+		
+		<strong>SetShadowOffsets</strong> - Sets the x and y offsets of the object's shadow
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetShadowOffsets(xoffset[number], yoffset[number])</pre>
+		
+		<strong>GetShadowOffsets</strong> - Gets the x and y offsets of the object's shadow <br/>
+		- Returns 2 values: x offset [number], y offset [number]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local offsetx, offsety = object:GetShadowOffsets()</pre>
+		
+		<strong>SetShadowColor</strong> - Sets the color of the object's shadow
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetShadowColor(r[number], g[number], b[number], a[number])</pre>
+		
+		<strong>GetShadowColor</strong> - Gets the color of the object's shadow <br/>
+		- Returns 1 value: shadowcolor [table]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local color = object:GetShadowColor()</pre>
+		
+		<strong>SetDefaultColor</strong> - Sets the default color of the object's text
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">object:SetDefaultColor(r[number], g[number], b[number], a[number])</pre>
+		
+		<strong>GetDefaultColor</strong> - Gets the default color of the object's text <br/>
+		- Returns 1 value: defaultcolor [table]
+
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local defaultcolor = object:GetDefaultColor()</pre>
+		
+	</div>
+	
+	<script type="text/javascript">SyntaxHighlighter.all();</script> 
+	</div>
+	</div>
+	</div>
+	</body>
+	</html>

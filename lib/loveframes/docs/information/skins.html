@@ -1,0 +1,599 @@
+
+			<html>
+			<head>
+			<style type="text/css">html
+{
+	position: relative;
+    min-height: 100%;
+}
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 0 25px;
+	background-color: #F1E5DA;
+	background-image: url(http://static.nikolairesokav.com/images/body-bg.png);
+}
+
+#bg
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1000;
+}
+
+#wrapper
+{
+	margin: auto;
+}
+
+/*==========================================================
+	- Section: Header
+==========================================================*/
+#header
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: #FFFFFF;
+	margin: auto;
+	border-bottom: none;
+	height: 74px;
+	background-color: #3366FF;
+	background-image: url(http://static.nikolairesokav.com/images/header-bg.png);
+}
+
+#header-text
+{
+	padding: 0px;
+	width: 800px;
+	margin: auto;
+	border: 0px solid #000000;
+}
+
+#header a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#header-subtext
+{
+	color: #F5F5F5;
+	font-size: 18px;
+	font-style: italic;
+}
+
+/*==========================================================
+	- Section: Container
+==========================================================*/
+#container
+{
+	margin: auto;
+	margin-top: 30px;
+	width: 800px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+}
+
+/*==========================================================
+	- Section: Navigation
+==========================================================*/
+#navigation-container
+{
+	width: 100%;
+	background: #ffaf4b;
+	background: -moz-linear-gradient(top,  #ffaf4b 0%, #ff920a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffaf4b), color-stop(100%,#ff920a));
+	background: -webkit-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: -o-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: -ms-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+	background: linear-gradient(to bottom,  #ffaf4b 0%,#ff920a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 );
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+}
+
+#navigation
+{
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
+
+#navigation-buttons
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#navigation-buttons li
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	float: left;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#navigation-buttons li a
+{
+	display: block;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 10px;
+	width: auto;
+	text-align: left;
+	text-decoration: none;
+	color: #FFFFFF;
+	width: 80px;
+	text-align: center;
+}
+
+#navigation-buttons li a:hover
+{
+	background-color: rgba(255, 255, 255, 0.30);
+}
+
+#navigation-buttons li a img
+{
+	border: 0px;
+	margin-bottom: -2px;
+}
+
+#navigation-profile-links
+{
+	position: absolute;
+	top: 7px;
+	right: 5px;
+	z-index: 10000;
+}
+
+/*==========================================================
+	- Section: Content
+==========================================================*/
+#content
+{
+	padding: 5px;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+#content-navigation
+{
+	position: absolute;
+	top: 62px;
+	right: 10px;
+	padding: 5px;
+	border: 1px dotted #CCCCCC;
+}
+
+#content-navigation-header
+{
+	padding: 5px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.content-header
+{
+	padding: 5px;
+	font-size: 27px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.content-section-header
+{
+	padding: 5px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #FF9900;
+}
+
+.content-section-body
+{
+	padding: 5px;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.content-section-body a
+{
+	color: #4D79FF;
+	text-decoration: none;
+}
+
+.content-section-body a:hover
+{
+	text-decoration: underline;
+}
+
+.content-section-body a[rel="lightbox[loveframes]"]
+{
+	opacity: 0.80;
+}
+
+.content-section-body a[rel="lightbox[loveframes]"]:hover
+{
+	opacity: 1;
+}
+
+.content-section-body img
+{
+	vertical-align: middle;
+}
+
+/*==========================================================
+	- Section: Guides
+==========================================================*/
+.guide-image
+{
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/*==========================================================
+	- Section: Footer
+==========================================================*/
+#footer
+{
+	text-align: center;
+	font-size: 10px;
+	color: #CCCCCC;
+	position: absolute;
+	bottom: 0px;
+	width: 800px;
+}
+
+#footer-content
+{
+	padding: 5px;
+	font-size: 10px;
+}
+	
+/*==========================================================
+	- Section: Misc
+==========================================================*/
+.changelog
+{
+	min-height: 500px;
+	max-height: 500px;
+	overflow: scroll;
+	overflow-x: hidden;
+	margin-top: 5px;
+	background-color: #FAFAFA;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.important-message
+{
+	background-color: #FFE599;
+	padding: 5px;
+	font-size: 12px;
+	border-radius: 5px;
+}
+
+.critical-message
+{
+	background-color: #FF9900;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	font-size: 12px;
+}
+
+.offset-left
+{
+	margin-left: 15px;
+}
+
+.code
+{
+	border: 1px solid #CCCCCC;
+}
+
+.listitem
+{
+	font-size: 20px;
+}
+
+.listitem-description
+{
+	margin-left: 20px;
+	font-style: italic;
+}
+
+#background-panel
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #FAFAFA;
+	opacity: 0.70;
+	filter:alpha(opacity=70);
+	z-index: 99;
+	visibility: hidden;
+}
+
+/*==========================================================
+	- Section: Documents
+==========================================================*/
+.document-link
+{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	display: block;
+	color: #1982D1;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+.document-link:hover
+{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #F5F5F5;
+	border-radius: 5px;
+}
+
+.document-mainlink
+{
+	font-size: 20px;
+}
+
+.document-codeblock
+{
+	padding: 5px;
+	background-color: #FAFAFA;
+	color: #A4A4A4;
+}
+
+.document-sourcebox
+{
+	position: fixed;
+	width: 90%;
+	background-color: #FFFFFF;
+	visibility: hidden;
+	z-index: 100;
+	border: 1px solid #CCCCCC;
+}
+
+.document-sourcebox-topbar
+{
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.document-sourcebox-topbar a
+{
+	font-weight: normal;
+	color: #1982D1;
+	text-decoration: none;
+}
+
+.document-sourcebox-topbar a:hover
+{
+	text-decoration: underline;
+}
+
+.document-sourcebox-content
+{
+	position: relative;
+	overflow-y: scroll;
+}
+
+/*==========================================================
+	- Section: Data Table
+==========================================================*/
+.datatable
+{
+	width: 100%;
+	border: none;
+}
+
+.datatable-row1 {
+	background-color: #FFFFFF;
+}
+
+.datatable-row2 {
+	background-color: #FAFAFA;
+}
+
+/*==========================================================
+	- Section: Charts
+==========================================================*/
+#loveframes-changelogchart-panel
+{
+	margin-top: 10px;
+	position: relative;
+}
+
+#loveframes-changelogchart-key
+{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}</style>
+			<link href="..//syntaxhighlighter_3.0.83/styles/shCore.css" rel="stylesheet" type="text/css" />
+			<link href="..//syntaxhighlighter_3.0.83/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+			<script type="text/javascript" src="..//syntaxhighlighter_3.0.83/src/shCore.js"></script>
+			<script type="text/javascript" src="..//syntaxhighlighter_3.0.83/scripts/shBrushLua.js"></script>
+			</head>
+			<body>
+			<div id="container">
+			<div id="content"> 	<div class="content-header">
+		L&#246;ve Frames - Skins
+	</div>
+	
+	<a href="../main.html" class="document-link" style="text-align: center;">Return to Index</a>
+	
+	<div class="content-section-header">
+		How Skins Work
+	</div>
+	
+	<div class="content-section-body">
+		A skin is basically a set of functions that dictate how each L&#246;ve Frames object is drawn.
+	</div>
+	
+	<div class="content-section-header">
+		Creating a Skin
+	</div>
+	
+	<div class="content-section-body">
+		Go to the L&#246;ve Frames skins directory and create a new folder. 
+		Name the folder what you want the name of the skin to be. 
+		The name of the folder must be exactly what the name of the skin will be. 
+		Next create a file called skin.lua in the folder that you just created. 
+		Open the skin.lua file that you just created with any text editor and copy and paste the following into the file:
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local skin = {}
+
+skin.name = "INSERT SKIN NAME HERE"
+skin.author = "INSERT SKIN AUTHOR HERE"
+skin.version = "INSERT SKIN VERSION HERE"</pre>
+		
+		Replace the value of skin.name with the name of the folder that you created. 
+		The value of skin.name must always be the same as the folder of the skin. 
+		Replace the values of skin.author and skin.version with whatever values you desire. 
+		Now you can start creating drawing functions for whatever objects you want. 
+		Here is an example of what one of these functions would look like:
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">function DrawFrame(object)
+	love.graphics.setColor(255, 255, 255, 255)
+	love.graphics.rectangle("fill", object:GetX(), object:GetY(), object:GetWidth(), object:GetHeight())
+end</pre>
+		
+		Each object will pass itself to its drawing function as an argument. 
+		This allows important values of the object to be accessed such as x and y. 
+		If the skin that you have created does not have a drawing function for a certain object, that object will refer to the default skin drawing functions. 
+		For a full list of object drawing functions, please refer to the list further down on this page.
+		
+		<br/>
+		<br/>
+		
+		After you are done creating all of your skin's drawing functions, you will need to end the skin.lua file with this piece of code:
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">loveframes.skins.Register(skin)</pre>
+		
+		A skin can also create a table of images within it's folder for easier use withing drawing functions. 
+		If you create an images folder within a skin's folder, any images you put in that folder will be added to the skins images table. 
+		These images can be access like this:
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">function DrawFrame(object)
+	love.graphics.setColor(255, 255, 255, 255)
+	love.graphics.rectangle("fill", object:GetX(), object:GetY(), object:GetWidth(), object:GetHeight())
+	love.graphics.draw(skin.images["imagename.png"], 5, 5)
+end</pre>
+		
+		So essentialy, any image within the skin's images folder can be accessed via skin.images["imagename.png"]. 
+		All you would need to do is replace "imagename" with the name of the image file and ".png" with the extension of the image file.
+	</div>
+	
+	<div class="content-section-header">
+		Using Skins
+	</div>
+	
+	<div class="content-section-body">
+		When an object is created its active skin is set to the current L&#246;ve Frames active skin. 
+		The L&#246;ve Frames active skin can be changed from within init.lua. 
+		All you need to do is change loveframes.config["ACTIVESKIN"] to the name of whatever skin you want to use. 
+		If you want to change the active skin withou reloading your project you can do this:
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">loveframe.util.SetActiveSkin("SKINNAME")</pre>
+		
+		Doing this will change the active skin. If you only want to change the skin of one object you can do so like this:
+		
+		<pre class="brush: lua" style="margin-top: 10px; margin-bottom: 10px;">local panel = loveframes.Create("panel")
+panel:SetSkin("SKINNAME")</pre>
+		
+		Doing this will change the object's skin to the skin specified. It will also change all of the object's children's skins recursively.
+	</div>
+	
+	<div class="content-section-header">
+		Drawing Functions
+	</div>
+	
+	<div class="content-section-body">
+		Below is a list of all skin drawing functions:
+	
+		<ul>
+			<li>DrawFrame(object)</li>
+			<li>DrawButton(object)</li>
+			<li>DrawCloseButton(object)</li>
+			<li>DrawProgressBar(object)</li>
+			<li>DrawScrollArea(object)</li>
+			<li>DrawScrollBar(object)</li>
+			<li>DrawScrollBody(object)</li>
+			<li>DrawPanel(object)</li>
+			<li>DrawList(object)</li>
+			<li>DrawOverList(object)</li>
+			<li>DrawTabPanel(object)</li>
+			<li>DrawTabButton(object)</li>
+			<li>DrawImage(object)</li>
+			<li>DrawImageButton(object)</li>
+			<li>DrawMultiChoice(object)</li>
+			<li>DrawMultiChoiceList(object)</li>
+			<li>DrawOverMultiChoiceList(object)</li>
+			<li>DrawMultiChoiceRow(object)</li>
+			<li>DrawToolTip(object)</li>
+			<li>DrawText(object)</li>
+			<li>DrawTextInput(object)</li>
+			<li>DrawOverTextInput(object)</li>
+			<li>DrawScrollButton(object)</li>
+			<li>DrawSlider(object)</li>
+			<li>DrawSliderButton(object</li>
+			<li>DrawCheckBox(object)</li>
+			<li>DrawCollapsibleCategory(object)</li>
+			<li>DrawColumnList(object)</li>
+			<li>DrawColumnListHeader(object)</li>
+			<li>DrawColumnListArea(object)</li>
+			<li>DrawOverColumnListArea(object)</li>
+			<li>DrawColumnListRow(object)</li>
+			<li>DrawLineNumbersPanel(object)</li>
+			<li>DrawNumberBox(object)</li>
+			<li>DrawGrid(object)</li>
+		</ul>
+	</div>
+	
+	<div class="content-section-header">
+		Third-Party Skins
+	</div>
+	
+	<div class="content-section-body">
+		Below is a list of skins for Love Frames created by third-party developers:
+		
+		<ul>
+			<li><a href="https://github.com/UnekPL/loveframes-gray-theme">Gray</a> - by unek</li>
+			<li><a href="https://github.com/UnekPL/loveframes-dark-theme">Dark</a> - by unek</li>
+			<li><a href="https://github.com/unek/loveframes-snap-theme">Snap</a> - by unek</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript">SyntaxHighlighter.all();</script> 
+	</div>
+	</div>
+	</div>
+	</body>
+	</html>
