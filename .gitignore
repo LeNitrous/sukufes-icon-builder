@@ -216,5 +216,5 @@ pip-log.txt
 .mr.developer.cfg
 
 #LOVE2d
-.cmd
-.bat
+*.cmd
+*.bat
