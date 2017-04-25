@@ -5,8 +5,8 @@ function love.conf(t)
 	
 	t.window.title 	= "Idol Icon Builder"
 	t.window.icon	= nil
-	t.window.width	= 550
-	t.window.height = 390
+	t.window.width	= 560
+	t.window.height = 400
 	t.window.msaa = 16
 	t.window.borderless	= false
 	t.window.resizeable	= false
