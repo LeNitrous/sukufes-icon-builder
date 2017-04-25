@@ -15,8 +15,8 @@ skin.name = "Blue"
 skin.author = "Nikolai Resokav"
 skin.version = "1.0"
 
-local smallfont = love.graphics.newFont(10)
-local imagebuttonfont = love.graphics.newFont(15)
+local smallfont = love.graphics.newFont("assets/fonts/MotoyaLMaru.ttf", 10)
+local imagebuttonfont = love.graphics.newFont("assets/fonts/MotoyaLMaru.ttf", 15)
 local bordercolor = {143, 143, 143, 255}
 
 -- add skin directives to this table
@@ -83,7 +83,7 @@ skin.controls.multichoicelist_body_color            = {240, 240, 240, 200}
 
 -- multichoicerow
 skin.controls.multichoicerow_body_nohover_color     = {240, 240, 240, 255}
-skin.controls.multichoicerow_body_hover_color       = {51, 204, 255, 255}
+skin.controls.multichoicerow_body_hover_color       = {255, 114, 170, 255}
 skin.controls.multichoicerow_text_nohover_color     = {0, 0, 0, 150}
 skin.controls.multichoicerow_text_hover_color       = {255, 255, 255, 255}
 skin.controls.multichoicerow_text_font              = smallfont
@@ -104,13 +104,13 @@ skin.controls.slider_bar_outline_color              = {220, 220, 220, 255}
 
 -- checkbox
 skin.controls.checkbox_body_color                   = {255, 255, 255, 255}
-skin.controls.checkbox_check_color                  = {128, 204, 255, 255}
+skin.controls.checkbox_check_color                  = {255, 114, 170, 255}
 skin.controls.checkbox_text_font                    = smallfont
 
 -- radiobutton
 skin.controls.radiobutton_body_color                = {255, 255, 255, 255}
-skin.controls.radiobutton_check_color               = {128, 204, 255, 255}
-skin.controls.radiobutton_inner_border_color        = {77, 184, 255, 255}
+skin.controls.radiobutton_check_color               = {255, 114, 170, 255}
+skin.controls.radiobutton_inner_border_color        = {255, 114, 170, 255}
 skin.controls.radiobutton_text_font                 = smallfont
 
 -- collapsiblecategory
@@ -158,6 +158,10 @@ skin.controls.menu_body_color                       = {255, 255, 255, 255}
 skin.controls.menuoption_body_hover_color           = {51, 204, 255, 255}
 skin.controls.menuoption_text_hover_color           = {255, 255, 255, 255}
 skin.controls.menuoption_text_color                 = {180, 180, 180, 255}
+
+-- text
+skin.controls.text_default_color					= {255, 255, 255, 255}
+skin.controls.text_default_font						= smallfont
 
 local function ParseHeaderText(str, hx, hwidth, tx)
 	
@@ -840,6 +844,7 @@ function skin.DrawTabButton(object)
 			love.graphics.print(text, x + 5, y + height/2 - theight/2)
 		end	
 	else
+		-- button body
 		-- button body
 		local gradient = skin.images["button-nohover.png"]
 		local gradientheight = gradient:getHeight()

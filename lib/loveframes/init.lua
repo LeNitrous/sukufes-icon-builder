@@ -18,12 +18,12 @@ loveframes.stage = "Alpha"
 -- library configurations
 loveframes.config = {}
 loveframes.config["DIRECTORY"] = nil
-loveframes.config["DEFAULTSKIN"] = "Blue"
-loveframes.config["ACTIVESKIN"] = "Blue"
+loveframes.config["DEFAULTSKIN"] = "Snap"
+loveframes.config["ACTIVESKIN"] = "Snap"
 loveframes.config["INDEXSKINIMAGES"] = true
 loveframes.config["DEBUG"] = false
 loveframes.config["ENABLE_SYSTEM_CURSORS"] = true
-loveframes.config["ENABLE_UTF8_SUPPORT"] = false
+loveframes.config["ENABLE_UTF8_SUPPORT"] = true
 
 -- misc library vars
 loveframes.state = "none"

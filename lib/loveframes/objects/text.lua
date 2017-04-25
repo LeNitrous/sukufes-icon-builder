@@ -32,7 +32,7 @@ function newobject:initialize()
 	self.lines = 0
 	self.formattedtext = {}
 	self.original = {}
-	self.defaultcolor = {0, 0, 0, 255}
+	self.defaultcolor = {255, 255, 255, 255}
 	self.shadowcolor = {0, 0, 0, 255}
 	self.linkcolor = {0, 102, 255, 255}
 	self.linkhovercolor = {0, 0, 255, 255}

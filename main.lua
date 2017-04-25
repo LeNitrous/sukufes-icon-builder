@@ -1,6 +1,8 @@
 loveframes 	= require 'lib.loveframes'
 assets		= require('lib.cargo').init('assets')
 
+local font = love.graphics.newFont('assets/fonts/MotoyaLMaru.ttf', 12)
+
 local sWidth 	= love.graphics.getWidth() 
 local sHeight 	= love.graphics.getHeight() 
 local iWidth	= 128
@@ -103,8 +105,12 @@ function love.load()
 	canvas = love.graphics.newCanvas(sWidth, sHeight, "rgb10a2")
 	canvas:setFilter("linear", "linear", 16)
 	-- UI Stuff
+	local m_Text = loveframes.Create("text")
+	m_Text:SetText("Ring")
+	m_Text:SetPos(5, 7)
+	
 	m_Rarity = loveframes.Create("multichoice")
-	m_Rarity:SetPos(5, 5)
+	m_Rarity:SetPos(5, 25)
 	m_Rarity:SetWidth(95)
 	m_Rarity:SetChoice("SR")
 	m_Rarity:AddChoice("N")
@@ -112,9 +118,13 @@ function love.load()
 	m_Rarity:AddChoice("SR")
 	m_Rarity:AddChoice("SSR")
 	m_Rarity:AddChoice("UR")
+
+	local m_Text2 = loveframes.Create("text")
+	m_Text2:SetText("Background")
+	m_Text2:SetPos(110, 7)
 	
 	m_Rarity2 = loveframes.Create("multichoice")
-	m_Rarity2:SetPos(110, 5)
+	m_Rarity2:SetPos(110, 25)
 	m_Rarity2:SetWidth(95)
 	m_Rarity2:SetChoice("SR")
 	m_Rarity2:AddChoice("N")
@@ -124,39 +134,39 @@ function love.load()
 	local attrs = {}
 	c_Smile = loveframes.Create("radiobutton")
 	c_Smile:SetText("Smile")
-	c_Smile:SetPos(5, 37.5)
+	c_Smile:SetPos(5, 55.5)
 	c_Smile:SetGroup(attrs)
 	c_Smile:SetChecked(true)
 
 	c_Cool = loveframes.Create("radiobutton")
 	c_Cool:SetText("Cool")
 	c_Cool:SetGroup(attrs)
-	c_Cool:SetPos(5, 62.5)
+	c_Cool:SetPos(5, 77.5)
 	
 	c_Pure = loveframes.Create("radiobutton")
 	c_Pure:SetText("Pure")
 	c_Pure:SetGroup(attrs)
-	c_Pure:SetPos(5, 87.5)
+	c_Pure:SetPos(5, 102.5)
 	
 	c_All = loveframes.Create("radiobutton")
 	c_All:SetText("Special")
 	c_All:SetGroup(attrs)
-	c_All:SetPos(5, 112.5)
+	c_All:SetPos(5, 127.5)
 
 	local i_Text = loveframes.Create("text")
 	i_Text:SetText("Output Name:")
-	i_Text:SetPos(5, 140)
+	i_Text:SetPos(5, 152)
 	
 	i_Box = loveframes.Create("textinput")
 	i_Box:SetText("idolu")
-	i_Box:SetPos(5, 160)
+	i_Box:SetPos(5, 170)
 	
 	local i_XText = loveframes.Create("text")
 	i_XText:SetText("Offset X")
-	i_XText:SetPos(5, 195)
+	i_XText:SetPos(5, 200)
 	
 	i_XBox = loveframes.Create("numberbox")
-	i_XBox:SetPos(5, 215)	
+	i_XBox:SetPos(5, 220)	
 	i_XBox:SetWidth(95)
 	i_XBox:SetHeight(25)
 	i_XBox:SetMax(9999)
@@ -164,10 +174,10 @@ function love.load()
 	
 	local i_YText = loveframes.Create("text")
 	i_YText:SetText("Offset Y")
-	i_YText:SetPos(110, 195)
+	i_YText:SetPos(110, 200)
 	
 	i_YBox = loveframes.Create("numberbox")
-	i_YBox:SetPos(110, 215)	
+	i_YBox:SetPos(110, 220)	
 	i_YBox:SetWidth(95)
 	i_YBox:SetHeight(25)
 	i_YBox:SetMax(9999)
@@ -187,12 +197,6 @@ function love.load()
 	i_Rank = loveframes.Create("checkbox")
 	i_Rank:SetText("Idolized")
 	i_Rank:SetPos(5, 305)
-	
---[[
-	e_Back = loveframes.Create("checkbox")
-	e_Back:SetText("Hide Background")
-	e_Back:SetPos(5, 330)
-]]
 
 	b_Create = loveframes.Create("button")
 	b_Create:SetText("Create")
@@ -239,7 +243,8 @@ function love.draw()
 	local s = i_SBox:GetValue()*0.01
 	-- Preview Pane
 	love.graphics.push()
-	love.graphics.translate(220,0)
+	love.graphics.translate(210,0)
+	love.graphics.setFont(font)
 	love.graphics.print("Preview:", 5, 5)
 
 --[[
@@ -269,7 +274,7 @@ function love.draw()
 	love.graphics.draw(canvas)
 	
 	love.graphics.setColor(55, 62, 70)
-	love.graphics.rectangle("fill", 0, 0, 220, love.graphics.getHeight())
+	love.graphics.rectangle("fill", 0, 0, 210, love.graphics.getHeight())
 	love.graphics.setColor(255,255,255)
 	loveframes.draw()
 end
