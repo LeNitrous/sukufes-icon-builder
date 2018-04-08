@@ -50,13 +50,15 @@ function cargo.init(config)
 
   local function halp(t, k)
     local path = (t._path .. '/' .. k):gsub('^/+', '')
-    if lf.isDirectory(path) then
+	local isdir = lf.getInfo(path)
+	isdir = isdir and isdir.type == "directory"
+    if isdir then
       rawset(t, k, init(path))
       return t[k]
     else
       for extension, loader in pairs(loaders) do
         local file = path .. '.' .. extension
-        if loader and lf.exists(file) then
+        if loader and lf.getInfo(file) then
           local asset = loader(file)
           rawset(t, k, asset)
           for pattern, processor in pairs(processors) do

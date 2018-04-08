@@ -12,10 +12,10 @@ local function clamp(low, n, high) return math.min(math.max(low, n), high) end
 -- // Color converting // --
 local function hex2rgb(hex) -- by thebra
 	local hex = hex:gsub("#", "")
-	return tonumber("0x"..hex:sub(1,2))
-	, tonumber("0x"..hex:sub(3,4))
-	, tonumber("0x"..hex:sub(5,6))
-	, (string.len(hex) > 7 and tonumber("0x"..hex:sub(7,8)) or 255)
+	return tonumber("0x"..hex:sub(1,2))/255
+	, tonumber("0x"..hex:sub(3,4))/255
+	, tonumber("0x"..hex:sub(5,6))/255
+	, (string.len(hex) > 7 and tonumber("0x"..hex:sub(7,8)) or 255)/255
 end
 
 local function hue2rgb(p, q, t)
@@ -30,7 +30,7 @@ end
 -- Both rgb2hsl and hsl2rgb were adapted from:
 -- http://pastebin.com/NrcJgL1d by mjijackson.com
 local function rgb2hsl(r, g, b, a)
-	local r, g, b, a = r/255, g/255, b/255, a and a/255 or 1
+	a = a or 1
 	local max, min = math.max(r, g, b), math.min(r, g, b)
 	local h = (max + min) / 2
 	local s, l = h, h
@@ -72,7 +72,7 @@ local function hsl2rgb(h, s, l, a)
 		b = hue2rgb(p, q, h - 1/3)
 	end
 
-	return r * 255, g * 255, b * 255, a * 255
+	return r, g, b, a
 end
 
 Color = {}
@@ -127,7 +127,7 @@ function rgb(rgb, g, b, a, hsl)
 		r = rgb
 		g = g or r
 		b = b or g
-		a = a or 255
+		a = a or 1
 	end
 
 	local self = {r, g, b, a}

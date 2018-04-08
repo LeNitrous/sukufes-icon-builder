@@ -20,12 +20,12 @@ skin.base = "Blue"
 -- color definitions
 local rgb = require(path .. ".skins.Snap.color").rgb
 
-local darkcolor = rgb(68, 68, 68)
-local bodycolor = rgb(55, 62, 70)
-local textcolor = rgb(255, 255, 255)
+local darkcolor = rgb(68/255, 68/255, 68/255)
+local bodycolor = rgb(55/255, 62/255, 70/255)
+local textcolor = rgb(1, 1, 1)
 
-local pinkcolor  = rgb(255, 122, 174)
-local whitecolor = rgb(255, 255, 255)
+local pinkcolor  = rgb(1, 122/255, 174/255)
+local whitecolor = rgb(1, 1, 1)
 
 -- fonts
 local smallfont     = love.graphics.newFont("assets/fonts/MotoyaLMaru.ttf", 12)
