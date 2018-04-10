@@ -146,7 +146,8 @@ function loveframes.util.GetDirectoryContents(dir, t)
 	local files = love.filesystem.getDirectoryItems(dir)
 	
 	for k, v in ipairs(files) do
-		local isdir = love.filesystem.isDirectory(dir.. "/" ..v)
+		local info = love.filesystem.getInfo(dir.. "/" ..v)
+		local isdir = info and info.type == "directory"
 		if isdir == true then
 			table.insert(dirs, dir.. "/" ..v)
 		else

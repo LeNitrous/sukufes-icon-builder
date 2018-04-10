@@ -1,3 +1,4 @@
+local love = require 'love'
 loveframes 	= require 'lib.loveframes'
 assets		= require('lib.cargo').init('assets')
 
@@ -27,12 +28,10 @@ local message = [[
 ]]
 
 function love.load()
-	love.graphics.setBackgroundColor(35, 42, 50, 255)
-	local icon = love.image.newImageData("icon.png")
-	love.window.setIcon(icon)
+	love.graphics.setBackgroundColor(35/255, 42/255, 50/255, 1)
 	
-	canvas = love.graphics.newCanvas(sWidth, sHeight, "rgb10a2")
-	canvas:setFilter("linear", "linear", 16)
+	canvas = love.graphics.newCanvas(sWidth, sHeight, {format = "rgba8"})
+	canvas:setFilter("linear", "linear")
 	
 	DrawInterface()
 	
@@ -40,9 +39,10 @@ function love.load()
 	
 	bg			= assets.images.bg_R_smile
 	border		= assets.images.ring_R_smile
-	idol		= assets.images.default
+	idol		= love.graphics.newImage("assets/images/default.png", {mipmaps = true})
 	idol_bg 	= "smile"
 	idol_ring 	= "smile"
+	idol:setMipmapFilter("linear")
 end
 
 function love.update(dt)
@@ -71,14 +71,15 @@ function love.update(dt)
 end
 
 function love.draw()	
-	love.graphics.setColor(55, 62, 70)
+	love.graphics.setColor(55/255, 62/255, 70/255)
 	love.graphics.rectangle("fill", 0, 0, 210, sHeight)
-	love.graphics.setColor(255,255,255)
+	love.graphics.setColor(1, 1, 1)
 	love.graphics.draw(assets.images.logo)
 	
 	DrawPreviewBox()
 	
 	loveframes.draw()
+	love.timer.sleep(1/60)
 end
 
 function love.mousemoved(x, y, dx, dy)
@@ -86,39 +87,34 @@ function love.mousemoved(x, y, dx, dy)
 end
 
 function love.filedropped(f)
-	local lfn = love.filesystem.newFileData
-	local lin = love.image.newImageData
 	local lgn = love.graphics.newImage
-	if f:open('r') then
-		local data = f:read()
-		f:close()
-		success, img = pcall(function() return lgn(lin(lfn(data, 'img', 'file'))) end)
-		idol = success and img
-		loaded_image = f:getFilename()
-		loaded_timer = 3
-	end
+	
+	success, img = pcall(lgn, f, {mipmaps = true})
+	idol = success and img or idol
+	loaded_image = f:getFilename()
+	loaded_timer = 3
 end
 
 function love.mousepressed(x, y, b, isTouch)
-	loveframes.mousepressed(x, y, b)
+	return loveframes.mousepressed(x, y, b)
 end
 
 function love.mousereleased(x, y, b, isTouch)
-	loveframes.mousereleased(x, y, b)
+	return loveframes.mousereleased(x, y, b)
 end
 
 function love.wheelmoved(x, y)
-	loveframes.wheelmoved(x, y)
+	return loveframes.wheelmoved(x, y)
 end
 
 function love.keypressed(k, scancode, isRepeat)
-	loveframes.keypressed(k, isRepeat)
+	return loveframes.keypressed(k, isRepeat)
 end
 
 function love.keyreleased(k)
-	loveframes.keyreleased(k)
+	return loveframes.keyreleased(k)
 end
 
 function love.textinput(t)
-	loveframes.textinput(t)
+	return loveframes.textinput(t)
 end

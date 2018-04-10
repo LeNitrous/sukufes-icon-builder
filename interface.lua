@@ -106,7 +106,7 @@ function DrawInterface()
 	b_Create:SetSize(200, 30)
 	b_Create.OnClick = function(object)
 		love.system.openURL("file://"..love.filesystem.getSaveDirectory())
-		canvas:newImageData(330/2+220-64, sHeight/2-64, 128,128):encode("png", i_Box:GetText() ..".png")
+		canvas:newImageData(0, 1, 330/2+220-64, sHeight/2-64, 128,128):encode("png", i_Box:GetText() ..".png")
 	end
 end
 
@@ -128,10 +128,12 @@ function DrawPreviewBox()
 	love.graphics.print("Preview:", 5, 5)
 	if loaded_image and loaded_timer > 0 then love.graphics.print("Loaded: " .. loaded_image, 5, pPreview.h - 20) end
 	
-	love.graphics.setCanvas(canvas)
+	love.graphics.setCanvas {canvas, stencil = true}
+	love.graphics.clear(0, 0, 0, 0)
 	love.graphics.draw(bg, pPreview.w/2, pPreview.h/2, 0, 1, 1, iWidth/2, iHeight/2)
 	love.graphics.stencil(function() 
-		love.graphics.circle("fill", pPreview.w/2, pPreview.h/2, 60) 
+		love.graphics.circle("fill", pPreview.w/2, pPreview.h/2, 60)
+		love.graphics.circle("line", pPreview.w/2, pPreview.h/2, 60)
 	end, "replace", 1, false)
 	love.graphics.setStencilTest("greater", 0)
 	love.graphics.draw(idol, pPreview.w/2+ox, pPreview.h/2+oy, 0, s, s, idol:getWidth()/2, idol:getHeight()/2)

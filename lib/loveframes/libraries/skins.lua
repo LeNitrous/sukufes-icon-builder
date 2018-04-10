@@ -43,13 +43,15 @@ function loveframes.skins.Register(skin)
 	end
 	
 	local dir = skin.directory or loveframes.config["DIRECTORY"] .. "/skins/" ..name
-	local dircheck = love.filesystem.isDirectory(dir)
+	local dircheck = love.filesystem.getInfo(dir)
+	dircheck = dircheck and dircheck.type == "directory"
 	if not dircheck then
 		loveframes.util.Error("Skin registration error: Could not find a directory for skin '" ..name.. "'.")
 	end
 	
 	local imagedir = skin.imagedir or dir .. "/images"
-	local imagedircheck = love.filesystem.isDirectory(imagedir)
+	local imagedircheck = love.filesystem.getInfo(imagedir)
+	imagedircheck = imagedircheck and imagedircheck.type == "directory"
 	if not imagedircheck then
 		loveframes.util.Error("Skin registration error: Could not find an image directory for skin '" ..name.. "'.")
 	end
